@@ -3779,27 +3779,6 @@ demo.text.font = 8,0, -1
 demo.text.text = Demo Mode
 
 ;-----------------------------------------------------------
-[Ratio]
-p1.pos          = 111, 111
-p1.level1.spr   = 300, 0
-p1.level1.scale = 1.0, 1.0
-p1.level2.spr   = 300, 1
-p1.level2.scale = 1.0, 1.0
-p1.level3.spr   = 300, 2
-p1.level3.scale = 1.0, 1.0
-p1.level4.spr   = 300, 3
-p1.level4.scale = 1.0, 1.0
-p2.pos          = 1169, 111
-p2.level1.spr   = 300, 0
-p2.level1.scale = 1.0, 1.0
-p2.level2.spr   = 300, 1
-p2.level2.scale = 1.0, 1.0
-p2.level3.spr   = 300, 2
-p2.level3.scale = 1.0, 1.0
-p2.level4.spr   = 300, 3
-p2.level4.scale = 1.0, 1.0
-
-;-----------------------------------------------------------
 ; How to customize
 ;-----------------------------------------------------------
 ; First of all, set filenames under [Files].
