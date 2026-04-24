@@ -126,10 +126,9 @@
  ; - order
  ;   Set the paramvalue to the ordering priority to give the character in
  ;   Arcade and Time Attack modes. A smaller value means you will fight the
- ;   character sooner (excluding 'ratio' Arcade mode, which allows more ordering
- ;   flexibility via 'arcade.ratiomatches' settings). The default order value is
- ;   1, if you omit this param. Edit *.maxmatches settings under [Options] to
- ;   customize amount of matches per order priority.
+ ;   character sooner. The default order value is 1, if you omit this param.
+ ;   Edit *.maxmatches settings under [Options] to customize amount of matches
+ ;   per order priority.
  ;   IKEMEN feature: Max 30 orders mugen limitation is lifted. Negative order
  ;   is reversed if character becomes unlocked (see 'unlock' parameter)
  ;
@@ -150,11 +149,6 @@
  ;   functionality normally not possible in mugen (rival matches, branching
  ;   paths, secret bosses etc.)
  ;   https://github.com/ikemen-engine/Ikemen-GO/wiki/Miscellaneous-Info#arcs
- ;
- ; - ratiopath
- ;   IKEMEN feature: Like 'arcadepath', but used only if the p2 team mode has
- ;   been set to 'ratio'. If not assigned, ratio team mode arcade run defaults
- ;   to 'arcade.ratiomatches' settings.
  ;
  ; - slot
  ;   IKEMEN feature: Slot parameter, which allows to assign multiple characters
@@ -293,7 +287,7 @@ stages/stage0-720.def
  ;Maximum number of matches to fight before game ends in Arcade single mode.
 arcade.maxmatches = 6,1,1,0,0,0,0,0,0,0
 
- ;Like arcade.maxmatches, but applies to Arcade team modes (sans 'Ratio').
+ ;Like arcade.maxmatches, but applies to Arcade team modes.
 team.maxmatches = 4,1,1,0,0,0,0,0,0,0
 
  ;Maximum number of matches to fight before game ends in Time Attack mode.
@@ -304,21 +298,6 @@ timeattack.maxmatches = 6,1,1,0,0,0,0,0,0,0
  ;By omitting -1 survival mode will end after particular amount of matches set
  ;below (in such case you can actually "complete" the mode).
 survival.maxmatches = -1,0,0,0,0,0,0,0,0,0
-
- ;IKEMEN feature: A 'Ratio' mode allows each team to select up to 3 characters
- ;and distribute 4 "ratio levels" amongst them, affecting their life and damage
- ;(ratio 2 is the default to which other ratios are compared, percentages are
- ;adjustable in options screen).
- ;Arcade ratio matches use 'ratiomatches' configuration instead of 'maxmatches'
- ;settings. Each entry here, separated by commas, represents a single match and
- ;consists of 2 assignments, separated by colon. Assignment on the left side of
- ;colon refers to the number of characters you will face in this match (valid
- ;numbers from 1 to 3, or a random selection range, consisting of one number,
- ;followed by a dash and another number). Assignment written after colon refers
- ;to character's order param, that can be used to limit which characters should
- ;be randomly chosen for this match. For example 2-3:4 entry means a match
- ;against team of 2 or 3 characters, chosen from characters with order=4.
-arcade.ratiomatches = 1-3:1, 3:1, 2:1, 2:1, 1:2, 3:1, 1-2:3
 
 ;-------------------------------------------------------------------------------
 [StoryMode]
