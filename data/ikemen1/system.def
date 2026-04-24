@@ -681,43 +681,6 @@ p1.teammenu.value.empty.icon.spr = 182,0
 p1.teammenu.value.empty.icon.layerno = 2
 p1.teammenu.value.spacing = 30,0
 
-;P1 Team menu ratio icons
-p1.teammenu.ratio1.icon.spr = 300, 0
-p1.teammenu.ratio1.icon.offset = 0, 15
-p1.teammenu.ratio1.icon.facing = 1
-p1.teammenu.ratio1.icon.scale = 2, 2
-p1.teammenu.ratio1.icon.layerno = 2
-p1.teammenu.ratio2.icon.spr = 300, 1
-p1.teammenu.ratio2.icon.offset = 0, 15
-p1.teammenu.ratio2.icon.facing = 1
-p1.teammenu.ratio2.icon.scale = 2, 2
-p1.teammenu.ratio2.icon.layerno = 2
-p1.teammenu.ratio3.icon.spr = 300, 2
-p1.teammenu.ratio3.icon.offset = 0, 15
-p1.teammenu.ratio3.icon.facing = 1
-p1.teammenu.ratio3.icon.scale = 2, 2
-p1.teammenu.ratio3.icon.layerno = 2
-p1.teammenu.ratio4.icon.spr = 300, 3
-p1.teammenu.ratio4.icon.offset = 0, 15
-p1.teammenu.ratio4.icon.facing = 1
-p1.teammenu.ratio4.icon.scale = 2, 2
-p1.teammenu.ratio4.icon.layerno = 2
-p1.teammenu.ratio5.icon.spr = 300, 4
-p1.teammenu.ratio5.icon.offset = 0, 15
-p1.teammenu.ratio5.icon.facing = 1
-p1.teammenu.ratio5.icon.scale = 2, 2
-p1.teammenu.ratio5.icon.layerno = 2
-p1.teammenu.ratio6.icon.spr = 300, 5
-p1.teammenu.ratio6.icon.offset = 0, 15
-p1.teammenu.ratio6.icon.facing = 1
-p1.teammenu.ratio6.icon.scale = 2, 2
-p1.teammenu.ratio6.icon.layerno = 2
-p1.teammenu.ratio7.icon.spr = 300, 6
-p1.teammenu.ratio7.icon.offset = 0, 15
-p1.teammenu.ratio7.icon.facing = 1
-p1.teammenu.ratio7.icon.scale = 2, 2
-p1.teammenu.ratio7.icon.layerno = 2
-
 ;P2 Team menu
 p2.teammenu.pos = 1197, 160
 ;p2.teammenu.bg.spr = 
@@ -758,49 +721,11 @@ p2.teammenu.value.empty.icon.spr = 192,0
 p2.teammenu.value.empty.icon.layerno = 2
 p2.teammenu.value.spacing = -30,0
 
-;P2 Team menu ratio icons
-p2.teammenu.ratio1.icon.spr = 301, 0
-p2.teammenu.ratio1.icon.offset = 0, 15
-p2.teammenu.ratio1.icon.facing = 1
-p2.teammenu.ratio1.icon.scale = 2, 2
-p2.teammenu.ratio1.icon.layerno = 2
-p2.teammenu.ratio2.icon.spr = 301, 1
-p2.teammenu.ratio2.icon.offset = 0, 15
-p2.teammenu.ratio2.icon.facing = 1
-p2.teammenu.ratio2.icon.scale = 2, 2
-p2.teammenu.ratio2.icon.layerno = 2
-p2.teammenu.ratio3.icon.spr = 301, 2
-p2.teammenu.ratio3.icon.offset = 0, 15
-p2.teammenu.ratio3.icon.facing = 1
-p2.teammenu.ratio3.icon.scale = 2, 2
-p2.teammenu.ratio3.icon.layerno = 2
-p2.teammenu.ratio4.icon.spr = 301, 3
-p2.teammenu.ratio4.icon.offset = 0, 15
-p2.teammenu.ratio4.icon.facing = 1
-p2.teammenu.ratio4.icon.scale = 2, 2
-p2.teammenu.ratio4.icon.layerno = 2
-p2.teammenu.ratio5.icon.spr = 301, 4
-p2.teammenu.ratio5.icon.offset = 0, 15
-p2.teammenu.ratio5.icon.facing = 1
-p2.teammenu.ratio5.icon.scale = 2, 2
-p2.teammenu.ratio5.icon.layerno = 2
-p2.teammenu.ratio6.icon.spr = 301, 5
-p2.teammenu.ratio6.icon.offset = 0, 15
-p2.teammenu.ratio6.icon.facing = 1
-p2.teammenu.ratio6.icon.scale = 2, 2
-p2.teammenu.ratio6.icon.layerno = 2
-p2.teammenu.ratio7.icon.spr = 301, 6
-p2.teammenu.ratio7.icon.offset = 0, 15
-p2.teammenu.ratio7.icon.facing = 1
-p2.teammenu.ratio7.icon.scale = 2, 2
-p2.teammenu.ratio7.icon.layerno = 2
-
 
 teammenu.itemname.single = Single
 teammenu.itemname.simul = Simul
 teammenu.itemname.tag = Tag
 teammenu.itemname.turns = Turns
-teammenu.itemname.ratio = Ratio
 
 paletteselect = 3
 ; Enables or disables palette selection menu in select screen. Accepted values:
