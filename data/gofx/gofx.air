@@ -20,6 +20,15 @@
 [Begin Action 5305]
 5305, 0, 0, 0, 1
 
+[Begin Action 5306]
+5306,0, 0,0, 1
+
+[Begin Action 5307]
+5307,0, 0,0, 1
+
+[Begin Action 5308]
+5308,0, 0,0, 1
+
 ;--------------------------
 ; Guard Break Sparks
 [Begin Action 5400]
@@ -39,10 +48,10 @@ Interpolate Blend
 
 ; Guard Break shockwave
 [Begin Action 5410]
-5410, 0, 0, 0, 15, , AS256D256, 0.5, 0.5
+5410, 0, 0, 0, 15, , AS256D256, 1.0, 1.0
 Interpolate Blend
 Interpolate Scale
-5410, 0, 0, 0, 1, , AS16D256, 1.0, 1.0
+5410, 0, 0, 0, 1, , AS16D256, 1.5, 1.5
 
 
 ;--------------------------
