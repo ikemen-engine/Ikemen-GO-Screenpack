@@ -1517,9 +1517,9 @@ p1.front.spr = 13, 2
 p1.front.offset = 0,0
 p1.front.palfx.sinadd = 255, 0, 0, 30
 p1.front.xshear = 3
-p1.shift.spr = 13,3          
-p1.shift.offset = 0,0       
-p1.shift.xshear = 3
+;p1.shift.spr = 13,3          
+;p1.shift.offset = 0,0       
+;p1.shift.xshear = 3
 p1.range.x  = 15,-460
 p1.scalefill = 1
 
@@ -1551,10 +1551,10 @@ p2.front.offset = 0,0
 p2.front.palfx.sinadd = 255, 0, 0, 30
 p2.front.xshear = -3
 p2.front.facing = -1
-p2.shift.spr = 13,3          
-p2.shift.offset = 0,0        
-p2.shift.xshear = -3
-p2.shift.facing = -1         
+;p2.shift.spr = 13,3          
+;p2.shift.offset = 0,0        
+;p2.shift.xshear = -3
+;p2.shift.facing = -1         
 p2.range.x  = -15,460
 p2.scalefill = 1
 
