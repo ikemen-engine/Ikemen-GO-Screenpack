@@ -1,0 +1,44 @@
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+name: update-credits
+
+concurrency:
+  group: update-credits-master
+  cancel-in-progress: false
+
+jobs:
+  update-credits:
+    name: update contributors
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out master
+        uses: actions/checkout@v7
+        with:
+          ref: master
+          token: ${{ secrets.IKEMEN_TOKEN }}
+
+      - name: Update credits.def
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/update_credits_contributors.py
+
+      - name: Commit credits.def
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if git diff --quiet -- data/ikemen1/credits.def; then
+            echo "credits.def is already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ikemen1/credits.def
+          git commit -m "docs: update credits contributors [skip ci]"
+          git pull --rebase origin master
+          git push origin HEAD:master
