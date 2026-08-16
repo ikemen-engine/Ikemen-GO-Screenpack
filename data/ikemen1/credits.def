@@ -53,7 +53,7 @@ layer2.offset = 0,20
 layer2.velocity = 0,-2
 layer2.textdelay = 2
 
-layer3.text = "HEAD DEVELOPER"
+layer3.text = "DEVELOPMENT LEAD"
 layer3.starttime = 120
 layer3.font = 0
 layer3.offset = 0,20
@@ -67,315 +67,308 @@ layer4.offset = 0,20
 layer4.velocity = 0,-2
 layer4.textdelay = 2
 
-layer5.text = "LEAD DEVELOPERS"
+layer5.text = "DEVELOPERS"
 layer5.starttime = 240
 layer5.font = 0
 layer5.offset = 0,20
 layer5.velocity = 0,-2
 layer5.textdelay = 3
 
-layer6.text = "NeatUnsou"
+layer6.text = "PotS"
 layer6.starttime = 280
 layer6.font = 1
 layer6.offset = 0,20
 layer6.velocity = 0,-2
 layer6.textdelay = 2
 
-layer7.text = "PotSMUGEN"
+layer7.text = "NeatUnsou"
 layer7.starttime = 310
 layer7.font = 1
 layer7.offset = 0,20
 layer7.velocity = 0,-2
 layer7.textdelay = 2
 
-layer8.text = "Rakieldev"
+layer8.text = "Gacel"
 layer8.starttime = 340
 layer8.font = 1
 layer8.offset = 0,20
 layer8.velocity = 0,-2
 layer8.textdelay = 2
 
-layer9.text = "Jesuszilla"
+layer9.text = "Eiton"
 layer9.starttime = 370
 layer9.font = 1
 layer9.offset = 0,20
 layer9.velocity = 0,-2
 layer9.textdelay = 2
 
-layer19.text = "Eiton"
-layer19.starttime = 400
-layer19.font = 1
-layer19.offset = 0,20
-layer19.velocity = 0,-2
-layer19.textdelay = 2
-
-layer10.text = "DEVELOPERS"
-layer10.starttime = 480
-layer10.font = 0
+layer10.text = "Jesuszilla"
+layer10.starttime = 400
+layer10.font = 1
 layer10.offset = 0,20
 layer10.velocity = 0,-2
-layer10.textdelay = 3
+layer10.textdelay = 2
 
-layer11.text = "ShinLucho"
-layer11.starttime = 520
+layer11.text = "Rakíel"
+layer11.starttime = 430
 layer11.font = 1
 layer11.offset = 0,20
 layer11.velocity = 0,-2
 layer11.textdelay = 2
 
-layer12.text = "Danielporto"
-layer12.starttime = 550
+layer12.text = "fantasma"
+layer12.starttime = 460
 layer12.font = 1
 layer12.offset = 0,20
 layer12.velocity = 0,-2
 layer12.textdelay = 2
 
-layer13.text = "Nckgriva"
-layer13.starttime = 580
+layer13.text = "Sam Hocevar"
+layer13.starttime = 490
 layer13.font = 1
 layer13.offset = 0,20
 layer13.velocity = 0,-2
 layer13.textdelay = 2
 
-layer14.text = "Gacel / Windblade-GR01"
-layer14.starttime = 610
+layer14.text = "Wreq!"
+layer14.starttime = 520
 layer14.font = 1
 layer14.offset = 0,20
 layer14.velocity = 0,-2
 layer14.textdelay = 2
 
-layer15.text = "Ambonmibable"
-layer15.starttime = 640
+layer15.text = "Wftk"
+layer15.starttime = 550
 layer15.font = 1
 layer15.offset = 0,20
 layer15.velocity = 0,-2
 layer15.textdelay = 2
 
-layer16.text = "Wintermourn"
-layer16.starttime = 670
+layer16.text = "wily-coyote"
+layer16.starttime = 580
 layer16.font = 1
 layer16.offset = 0,20
 layer16.velocity = 0,-2
 layer16.textdelay = 2
 
 layer17.text = "Amavect"
-layer17.starttime = 700
+layer17.starttime = 610
 layer17.font = 1
 layer17.offset = 0,20
 layer17.velocity = 0,-2
 layer17.textdelay = 2
 
-layer18.text = "BwdYeti"
-layer18.starttime = 730
+layer18.text = "two4teezee"
+layer18.starttime = 640
 layer18.font = 1
 layer18.offset = 0,20
 layer18.velocity = 0,-2
 layer18.textdelay = 2
 
-layer20.text = "SuperFromND"
-layer20.starttime = 760
+layer19.text = "Orange-Dolphin"
+layer19.starttime = 670
+layer19.font = 1
+layer19.offset = 0,20
+layer19.velocity = 0,-2
+layer19.textdelay = 2
+
+layer20.text = "Nikolay Griva"
+layer20.starttime = 700
 layer20.font = 1
 layer20.offset = 0,20
 layer20.velocity = 0,-2
 layer20.textdelay = 2
 
-layer21.text = "two4teezee"
-layer21.starttime = 790
+layer21.text = "Daniel Porto"
+layer21.starttime = 730
 layer21.font = 1
 layer21.offset = 0,20
 layer21.velocity = 0,-2
 layer21.textdelay = 2
 
-layer22.text = "assemblaj"
-layer22.starttime = 820
+layer22.text = "Alceris"
+layer22.starttime = 760
 layer22.font = 1
 layer22.offset = 0,20
 layer22.velocity = 0,-2
 layer22.textdelay = 2
 
-layer23.text = "GaryCXJk"
-layer23.starttime = 850
+layer23.text = "Kase"
+layer23.starttime = 790
 layer23.font = 1
 layer23.offset = 0,20
 layer23.velocity = 0,-2
 layer23.textdelay = 2
 
-layer24.text = "Wreq! / Lazin3ss"
-layer24.starttime = 880
+layer24.text = "Kokorz"
+layer24.starttime = 820
 layer24.font = 1
 layer24.offset = 0,20
 layer24.velocity = 0,-2
 layer24.textdelay = 2
 
-layer25.text = "samhocevar"
-layer25.starttime = 910
+layer25.text = "Super"
+layer25.starttime = 850
 layer25.font = 1
 layer25.offset = 0,20
 layer25.velocity = 0,-2
 layer25.textdelay = 2
 
-layer26.text = "RealFoobs"
-layer26.starttime = 940
+layer26.text = "Foobs"
+layer26.starttime = 880
 layer26.font = 1
 layer26.offset = 0,20
 layer26.velocity = 0,-2
 layer26.textdelay = 2
 
-layer27.text = "RollinJay"
-layer27.starttime = 970
+layer27.text = "ShinLucho"
+layer27.starttime = 910
 layer27.font = 1
 layer27.offset = 0,20
 layer27.velocity = 0,-2
 layer27.textdelay = 2
 
-layer28.text = "Wftk"
-layer28.starttime = 1000
+layer28.text = "BwdYeti"
+layer28.starttime = 940
 layer28.font = 1
 layer28.offset = 0,20
 layer28.velocity = 0,-2
 layer28.textdelay = 2
 
-layer29.text = "wily-coyote"
-layer29.starttime = 1030
+layer29.text = "Wintermourn"
+layer29.starttime = 970
 layer29.font = 1
 layer29.offset = 0,20
 layer29.velocity = 0,-2
 layer29.textdelay = 2
 
-layer30.text = "Kasasagi77"
-layer30.starttime = 1060
+layer30.text = "GaryCXJk"
+layer30.starttime = 1000
 layer30.font = 1
 layer30.offset = 0,20
 layer30.velocity = 0,-2
 layer30.textdelay = 2
 
-layer31.text = "Orange-Dolphin"
-layer31.starttime = 1090
+layer31.text = "Wintermourn"
+layer31.starttime = 1030
 layer31.font = 1
 layer31.offset = 0,20
 layer31.velocity = 0,-2
 layer31.textdelay = 2
 
-layer32.text = "Alceris"
-layer32.starttime = 1120
+layer32.text = "Kasasagi"
+layer32.starttime = 1060
 layer32.font = 1
 layer32.offset = 0,20
 layer32.velocity = 0,-2
 layer32.textdelay = 2
 
-layer33.text = "facundocameto"
-layer33.starttime = 1150
+layer33.text = "RollinJay"
+layer33.starttime = 1090
 layer33.font = 1
 layer33.offset = 0,20
 layer33.velocity = 0,-2
 layer33.textdelay = 2
 
-layer34.text = "leonkasovan"
-layer34.starttime = 1180
+layer34.text = "Leon Kasovan"
+layer34.starttime = 1120
 layer34.font = 1
 layer34.offset = 0,20
 layer34.velocity = 0,-2
 layer34.textdelay = 2
 
-layer35.text = "Kokorz"
-layer35.starttime = 1210
+layer35.text = "Among many other Ikemen GO engine contributors"
+layer35.starttime = 1150
 layer35.font = 1
 layer35.offset = 0,20
 layer35.velocity = 0,-2
 layer35.textdelay = 2
 
-layer36.text = "Among many other Ikemen GO engine contributors"
-layer36.starttime = 1240
-layer36.font = 1
+layer36.text = "MOTIF AUTHOR"
+layer36.starttime = 1310
+layer36.font = 0
 layer36.offset = 0,20
 layer36.velocity = 0,-2
-layer36.textdelay = 2
+layer36.textdelay = 3
 
-layer37.text = "MOTIF AUTHOR"
-layer37.starttime = 1400
-layer37.font = 0
+layer37.text = "Ohmga Shironeko"
+layer37.starttime = 1350
+layer37.font = 1
 layer37.offset = 0,20
 layer37.velocity = 0,-2
-layer37.textdelay = 3
+layer37.textdelay = 2
 
-layer38.text = "Ohmga Shironeko"
-layer38.starttime = 1440
-layer38.font = 1
+layer38.text = "MISC. CONTRIBUTORS"
+layer38.starttime = 1430
+layer38.font = 0
 layer38.offset = 0,20
 layer38.velocity = 0,-2
-layer38.textdelay = 2
+layer38.textdelay = 3
 
-layer39.text = "MISC. CONTRIBUTORS"
-layer39.starttime = 1520
-layer39.font = 0
-layer39.offset = 0,20
-layer39.velocity = 0,-2
-layer39.textdelay = 3
+layer40.text = "President Devon"
+layer40.starttime = 1470
+layer40.font = 1
+layer40.offset = 0,20
+layer40.velocity = 0,-2
+layer40.textdelay = 2
 
-layer41.text = "President Devon"
-layer41.starttime = 1560
+layer41.text = "Rurouni"
+layer41.starttime = 1500
 layer41.font = 1
 layer41.offset = 0,20
 layer41.velocity = 0,-2
 layer41.textdelay = 2
 
-layer42.text = "Rurouni"
-layer42.starttime = 1590
+layer42.text = "Shiyo Kakuge"
+layer42.starttime = 1530
 layer42.font = 1
 layer42.offset = 0,20
 layer42.velocity = 0,-2
 layer42.textdelay = 2
 
-layer43.text = "Shiyo Kakuge"
-layer43.starttime = 1620
+layer43.text = "CrystalizedSun"
+layer43.starttime = 1560
 layer43.font = 1
 layer43.offset = 0,20
 layer43.velocity = 0,-2
 layer43.textdelay = 2
 
-layer44.text = "CrystalizedSun"
-layer44.starttime = 1650
+layer44.text = "Miguel Young"
+layer44.starttime = 1590
 layer44.font = 1
 layer44.offset = 0,20
 layer44.velocity = 0,-2
 layer44.textdelay = 2
 
-layer45.text = "Miguel Young"
-layer45.starttime = 1680
+layer45.text = "Kamekaze"
+layer45.starttime = 1620
 layer45.font = 1
 layer45.offset = 0,20
 layer45.velocity = 0,-2
 layer45.textdelay = 2
 
-layer46.text = "Kamekaze"
-layer46.starttime = 1710
+layer46.text = "Lasombra Demon"
+layer46.starttime = 1650
 layer46.font = 1
 layer46.offset = 0,20
 layer46.velocity = 0,-2
 layer46.textdelay = 2
 
-layer47.text = "Lasombra Demon"
-layer47.starttime = 1740
-layer47.font = 1
+layer47.text = "KUNG FU MAN"
+layer47.starttime = 1730
+layer47.font = 0
 layer47.offset = 0,20
 layer47.velocity = 0,-2
-layer47.textdelay = 2
+layer47.textdelay = 3
 
-layer48.text = "KUNG FU MAN"
-layer48.starttime = 1820
-layer48.font = 0
+layer48.text = "Elecbyte"
+layer48.starttime = 1770
+layer48.font = 1
 layer48.offset = 0,20
 layer48.velocity = 0,-2
-layer48.textdelay = 3
+layer48.textdelay = 2
 
-layer49.text = "Elecbyte"
-layer49.starttime = 1860
-layer49.font = 1
-layer49.offset = 0,20
-layer49.velocity = 0,-2
-layer49.textdelay = 2
-
-end.time = 2310
+end.time = 2220
 
 
 [Scene 3]
