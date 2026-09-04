@@ -142,11 +142,26 @@ def display_name(login: str) -> str:
     return DISPLAY_NAMES.get(login.casefold(), login)
 
 
+def merge_contributors(contributors: list[Contributor]) -> list[Contributor]:
+    merged: dict[str, Contributor] = {}
+    for contributor in contributors:
+        login = display_name(contributor["login"])
+        key = login.casefold()
+        if key not in merged:
+            merged[key] = {**contributor, "login": login}
+        else:
+            merged[key]["commits"] += contributor["commits"]
+            merged[key]["additions"] += contributor["additions"]
+    return list(merged.values())
+
+
 def generated_contributors(
     contributors: list[Contributor],
 ) -> tuple[list[Contributor], list[Contributor]]:
     included: list[Contributor] = []
     skipped: list[Contributor] = []
+
+    contributors = merge_contributors(contributors)
 
     for contributor in contributors:
         if qualifies(contributor):
