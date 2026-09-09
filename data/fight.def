@@ -3809,7 +3809,7 @@ p1.enabled.training = 1
 
 ;-----------------------------------------------------------
 [Match]
-pos = 586,24
+pos = 280,24
 ;bg.spr = 
 text.font = 8,0, -1
 text.text = STAGE %s
