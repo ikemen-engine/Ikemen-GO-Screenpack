@@ -1,3 +1,5 @@
-These source files are provided as is and are to be opened within Clip Studio Paint.
+This folder has both PSD files and Clip Studio Paint files.
 
-You may resave them into PSD files if you would like.
+The source files were made in clip studio paint, so opening the PSD files may not have the same effect as if the Clip files were opened.
+
+Both are kept here for archival and open source purposes.
