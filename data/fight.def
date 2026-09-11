@@ -1574,64 +1574,64 @@ p1.bg0.offset = 0,3
 p1.bg1.spr = 41,0
 ;p1.mid.spr = 42,0
 p1.front.spr = 43,0
-p1.front.offset = 0,4
+p1.front.offset = -4,4
 p1.front.palfx.mul = 178, 178, 178
-p1.range.x = -4,-206
+p1.range.x = -4, -206
 
 ; Multiple Front Elements can be added depending on the amount of power, including maximum power
 
 p1.front500.spr = 43, 0
-p1.front500.offset = 0,4
+p1.front500.offset = -4,4
 p1.front500.palfx.mul = 178, 178, 178 
 p1.front500.palfx.sinmul = 20, 20, 20, 90
 
 p1.front1000.spr = 43, 0
-p1.front1000.offset = 0,4
+p1.front1000.offset = -4,4
 p1.front1000.palfx.mul = 0, 122, 255 
 p1.front1000.palfx.sinmul = 20, 20, 20, 60
 
 p1.front2000.spr = 43, 0
-p1.front2000.offset = 0,4
+p1.front2000.offset = -4,4
 p1.front2000.palfx.mul = 254, 254, 55
 p1.front2000.palfx.sinmul = 32, 32, 32, 50
 
 p1.front3000.spr = 43, 0
-p1.front3000.offset = 0,4
+p1.front3000.offset = -4,4
 p1.front3000.palfx.mul = 255, 55, 55
 p1.front3000.palfx.sinmul = 32, 32, 32, 45
 
 p1.front4000.spr = 43, 0
-p1.front4000.offset = 0,4
+p1.front4000.offset = -4,4
 p1.front4000.palfx.mul = 0, 250, 0
 p1.front4000.palfx.sinmul = 32, 32, 32, 40
 
 p1.front5000.spr = 43, 0
-p1.front5000.offset = 0,4
+p1.front5000.offset = -4,4
 p1.front5000.palfx.mul = 256, 155, 64
 p1.front5000.palfx.sinmul = 32, 32, 32, 35
 
 p1.front6000.spr = 43, 0
-p1.front6000.offset = 0,4
+p1.front6000.offset = -4,4
 p1.front6000.palfx.mul = 75, 250, 150
 p1.front6000.palfx.sinmul = 32, 32, 32, 30
 
 p1.front7000.spr = 43, 0
-p1.front7000.offset = 0,4
+p1.front7000.offset = -4,4
 p1.front7000.palfx.mul = 0, 200, 225
 p1.front7000.palfx.sinmul = 32, 32, 32, 25
 
 p1.front8000.spr = 43, 0
-p1.front8000.offset = 0,4
+p1.front8000.offset = -4,4
 p1.front8000.palfx.mul = 200, 78, 240
 p1.front8000.palfx.sinmul = 32, 32, 32, 20
 
 p1.front9000.spr = 43, 0
-p1.front9000.offset = 0,4
+p1.front9000.offset = -4,4
 p1.front9000.palfx.mul = 255, 32, 135
 p1.front9000.palfx.sinmul = 32, 32, 32, 15
 
 p1.front10000.spr = 43, 0
-p1.front10000.offset = 0,4
+p1.front10000.offset = -4,4
 p1.front10000.palfx.mul = 236, 236, 236
 p1.front10000.palfx.sinmul = 20, 20, 20, 10
 
@@ -1704,74 +1704,74 @@ p2.bg1.facing = -1
 ;p2.mid.facing = -1
 p2.front.spr = 43,0
 p2.front.palfx.mul = 178, 178, 178
-p2.front.offset = 0,4
+p2.front.offset = 4,4
 p2.front.facing = -1
 p2.range.x  = 4,206
 
 ; Multiple Front Elements can be added depending on the amount of power, including maximum power
 
 p2.front500.spr = 43, 0
-p2.front500.offset = 0,4
+p2.front500.offset = 4,4
 p2.front500.palfx.mul = 178, 178, 178 
 p2.front500.palfx.sinmul = 20, 20, 20, 90
 p2.front500.facing = -1
 
 p2.front1000.spr = 43, 0
-p2.front1000.offset = 0,4
+p2.front1000.offset = 4,4
 p2.front1000.palfx.mul = 0, 122, 255 
 p2.front1000.palfx.sinmul = 20, 20, 20, 60
 p2.front1000.facing = -1
 
 p2.front2000.spr = 43, 0
-p2.front2000.offset = 0,4
+p2.front2000.offset = 4,4
 p2.front2000.palfx.mul = 254, 254, 55
 p2.front2000.palfx.sinmul = 32, 32, 32, 50
 p2.front2000.facing = -1
 
 p2.front3000.spr = 43, 0
-p2.front3000.offset = 0,4
+p2.front3000.offset = 4,4
 p2.front3000.palfx.mul = 255, 55, 55
 p2.front3000.palfx.sinmul = 32, 32, 32, 45
 p2.front3000.facing = -1
 
 p2.front4000.spr = 43, 0
-p2.front4000.offset = 0,4
+p2.front4000.offset = 4,4
 p2.front4000.palfx.mul = 0, 250, 0
 p2.front4000.palfx.sinmul = 32, 32, 32, 40
 p2.front4000.facing = -1
 
 p2.front5000.spr = 43, 0
-p2.front5000.offset = 0,4
+p2.front5000.offset = 4,4
 p2.front5000.palfx.mul = 256, 155, 64
 p2.front5000.palfx.sinmul = 32, 32, 32, 35
 p2.front5000.facing = -1
 
 p2.front6000.spr = 43, 0
-p2.front6000.offset = 0,4
+p2.front6000.offset = 4,4
 p2.front6000.palfx.mul = 75, 250, 150
 p2.front6000.palfx.sinmul = 32, 32, 32, 30
 p2.front6000.facing = -1
 
 p2.front7000.spr = 43, 0
-p2.front7000.offset = 0,4
+p2.front7000.offset = 4,4
 p2.front7000.palfx.mul = 0, 200, 225
 p2.front7000.palfx.sinmul = 32, 32, 32, 25
 p2.front7000.facing = -1
 
 p2.front8000.spr = 43, 0
-p2.front8000.offset = 0,4
+p2.front8000.offset = 4,4
 p2.front8000.palfx.mul = 200, 78, 240
 p2.front8000.palfx.sinmul = 32, 32, 32, 20
 p2.front8000.facing = -1
 
 p2.front9000.spr = 43, 0
-p2.front9000.offset = 0,4
+p2.front9000.offset = 4,4
 p2.front9000.palfx.mul = 255, 32, 135
 p2.front9000.palfx.sinmul = 32, 32, 32, 15
 p2.front9000.facing = -1
 
 p2.front10000.spr = 43, 0
-p2.front10000.offset = 0,4
+p2.front10000.offset = 4,4
 p2.front10000.palfx.mul = 236, 236, 236
 p2.front10000.palfx.sinmul = 20, 20, 20, 10
 p2.front10000.facing = -1
@@ -1860,7 +1860,7 @@ p1.bg1.layerno = 0
 p1.front.spr = 92, 0
 p1.front.offset = -4,5
 p1.front.layerno = 0
-p1.range.y = 104, 0
+p1.range.y = 104, 4
 p1.warn.range = 0, 0
 p1.warn.spr = 93, 0
 p1.warn.palfx.sinadd = 128, 128, 128, 5
@@ -1883,7 +1883,7 @@ p2.front.spr = 92, 0
 p2.front.offset =  4,5
 p2.front.layerno = 0
 p2.front.facing = -1
-p2.range.y = 104, 0
+p2.range.y = 102, 4
 p2.warn.range = 0, 0
 p2.warn.spr = 93, 0
 p2.warn.palfx.sinadd = 128, 128, 128, 5
@@ -1908,7 +1908,7 @@ p1.bg1.layerno = 0
 p1.front.spr = 92, 0
 p1.front.offset = -4,5
 p1.front.layerno = 0
-p1.range.y = 104, 0
+p1.range.y = 103, 4
 p1.warn.range = 0, 0
 p1.warn.spr = 93, 0
 p1.warn.palfx.sinadd = 128, 128, 128, 5
@@ -1931,7 +1931,7 @@ p2.front.spr = 92, 0
 p2.front.offset =  4,5
 p2.front.layerno = 0
 p2.front.facing = -1
-p2.range.y = 104, 0
+p2.range.y = 103, 4
 p2.warn.range = 0, 0
 p2.warn.spr = 93, 0
 p2.warn.palfx.sinadd = 128, 128, 128, 5
@@ -1952,7 +1952,7 @@ p1.bg1.layerno = 0
 p1.front.spr = 92, 0
 p1.front.offset = -4,5
 p1.front.layerno = 0
-p1.range.y = 104, 0
+p1.range.y = 103, 4
 p1.warn.range = 0, 0
 p1.warn.spr = 93, 0
 p1.warn.palfx.sinadd = 128, 128, 128, 5
@@ -1975,7 +1975,7 @@ p2.front.spr = 92, 0
 p2.front.offset =  4,5
 p2.front.layerno = 0
 p2.front.facing = -1
-p2.range.y = 104, 0
+p2.range.y = 103, 4
 p2.warn.range = 0, 0
 p2.warn.spr = 93, 0
 p2.warn.palfx.sinadd = 128, 128, 128, 5
@@ -1996,7 +1996,7 @@ p1.bg1.layerno = 0
 p1.front.spr = 92, 0
 p1.front.offset = -4,5
 p1.front.layerno = 0
-p1.range.y = 104, 0
+p1.range.y = 103, 4
 p1.warn.range = 0, 0
 p1.warn.spr = 93, 0
 p1.warn.palfx.sinadd = 128, 128, 128, 5
@@ -2019,7 +2019,7 @@ p2.front.spr = 92, 0
 p2.front.offset =  4,5
 p2.front.layerno = 0
 p2.front.facing = -1
-p2.range.y = 104, 0
+p2.range.y = 103, 4
 p2.warn.range = 0, 0
 p2.warn.spr = 93, 0
 p2.warn.palfx.sinadd = 128, 128, 128, 5
@@ -2040,7 +2040,7 @@ p1.bg1.spr = 95, 0
 p1.bg1.offset = -4, 4
 p1.bg1.layerno = 0
 p1.front.spr = 97, 0
-p1.front.offset = -3, 4
+p1.front.offset = -3, 3
 p1.front.layerno = 0
 p1.warn.range = 0, 0
 p1.warn.spr = 98, 0
@@ -2050,7 +2050,7 @@ p1.warn.palfx.sinmul = 0, 128, 128, 5
 p1.warn.offset = -15, 0
 p1.warn.layerno = 1
 p1.warn.scale = 2,2
-p1.range.x = -106, 0
+p1.range.x = -103, -3
 
 ;Player 2
 p2.pos = 1157, 3
@@ -2062,7 +2062,7 @@ p2.bg1.offset = 4, 4
 p2.bg1.layerno = 0
 p2.bg1.facing = -1
 p2.front.spr = 97, 0
-p2.front.offset = 4, 4
+p2.front.offset = 4, 3
 p2.front.layerno = 0
 p2.front.facing = -1
 p2.warn.range = 0, 0
@@ -2073,7 +2073,7 @@ p2.warn.palfx.sinmul = 0, 128, 128, 5
 p2.warn.offset = 93, 0
 p2.warn.layerno = 1
 p2.warn.scale = 2,2
-p2.range.x = 106, 0
+p2.range.x = 105, 5
 
 [Simul Stunbar]
 [Simul_3P Stunbar]
@@ -2088,7 +2088,7 @@ p1.bg1.spr = 95, 0
 p1.bg1.offset = -4, 4
 p1.bg1.layerno = 0
 p1.front.spr = 97, 0
-p1.front.offset = -3, 4
+p1.front.offset = -3, 3
 p1.front.layerno = 0
 p1.warn.range = 0, 0
 p1.warn.spr = 98, 0
@@ -2098,7 +2098,7 @@ p1.warn.palfx.sinmul = 0, 128, 128, 5
 p1.warn.offset = -15, 0
 p1.warn.layerno = 1
 p1.warn.scale = 2,2
-p1.range.x = -106, 0
+p1.range.x = -103, -3
 
 ;Player 2
 p2.pos = 1157, 3
@@ -2110,7 +2110,7 @@ p2.bg1.offset = 4, 4
 p2.bg1.layerno = 0
 p2.bg1.facing = -1
 p2.front.spr = 97, 0
-p2.front.offset = 4, 4
+p2.front.offset = 4, 3
 p2.front.layerno = 0
 p2.front.facing = -1
 p2.warn.range = 0, 0
@@ -2121,7 +2121,7 @@ p2.warn.palfx.sinmul = 0, 128, 128, 5
 p2.warn.offset = 93, 0
 p2.warn.layerno = 1
 p2.warn.scale = 2,2
-p2.range.x = 106, 0
+p2.range.x = 105, 5
 
 [Tag_3P Stunbar]
 ;Player 1
@@ -2132,7 +2132,7 @@ p1.bg1.spr = 95, 0
 p1.bg1.offset = -4, 4
 p1.bg1.layerno = 0
 p1.front.spr = 97, 0
-p1.front.offset = -3, 4
+p1.front.offset = -3, 3
 p1.front.layerno = 0
 p1.warn.range = 0, 0
 p1.warn.spr = 98, 0
@@ -2142,7 +2142,7 @@ p1.warn.palfx.sinmul = 0, 128, 128, 5
 p1.warn.offset = -15, 0
 p1.warn.layerno = 1
 p1.warn.scale = 2,2
-p1.range.x = -106, 0
+p1.range.x = -103, -3
 
 ;Player 2
 p2.pos = 1157, 3
@@ -2154,7 +2154,7 @@ p2.bg1.offset = 4, 4
 p2.bg1.layerno = 0
 p2.bg1.facing = -1
 p2.front.spr = 97, 0
-p2.front.offset = 4, 4
+p2.front.offset = 4, 3
 p2.front.layerno = 0
 p2.front.facing = -1
 p2.warn.range = 0, 0
@@ -2165,7 +2165,7 @@ p2.warn.palfx.sinmul = 0, 128, 128, 5
 p2.warn.offset = 93, 0
 p2.warn.layerno = 1
 p2.warn.scale = 2,2
-p2.range.x = 106, 0
+p2.range.x = 105, 5
 
 [Tag_4P Stunbar]
 ;Player 1
@@ -2176,7 +2176,7 @@ p1.bg1.spr = 95, 0
 p1.bg1.offset = -4, 4
 p1.bg1.layerno = 0
 p1.front.spr = 97, 0
-p1.front.offset = -3, 4
+p1.front.offset = -3, 3
 p1.front.layerno = 0
 p1.warn.range = 0, 0
 p1.warn.spr = 98, 0
@@ -2186,7 +2186,7 @@ p1.warn.palfx.sinmul = 0, 128, 128, 5
 p1.warn.offset = -15, 0
 p1.warn.layerno = 1
 p1.warn.scale = 2,2
-p1.range.x = -106, 0
+p1.range.x = -103, -3
 
 ;Player 2
 p2.pos = 1157, 3
@@ -2198,7 +2198,7 @@ p2.bg1.offset = 4, 4
 p2.bg1.layerno = 0
 p2.bg1.facing = -1
 p2.front.spr = 97, 0
-p2.front.offset = 4, 4
+p2.front.offset = 4, 3
 p2.front.layerno = 0
 p2.front.facing = -1
 p2.warn.range = 0, 0
@@ -2209,7 +2209,7 @@ p2.warn.palfx.sinmul = 0, 128, 128, 5
 p2.warn.offset = 93, 0
 p2.warn.layerno = 1
 p2.warn.scale = 2,2
-p2.range.x = 106, 0
+p2.range.x = 105, 5
 
 
 
@@ -3771,12 +3771,13 @@ p2.enabled.versuscoop = 1
 
 ;-----------------------------------------------------------
 [Timer]
-pos = 586,24
+pos = 1080,24
 ;bg.spr = 
 text.font = 8,0, -1
 ; Time format: %m = minutes, %s = seconds, %x = milliseconds
 text.text = TIME: %m:%s.%x
 
+enabled.bossrush = 1
 enabled.timeattack = 1
 enabled.timechallenge = 1
 
@@ -3793,7 +3794,7 @@ p2.text.font = 8,0, 1
 p2.text.text = %s
 
 score.min = 0
-score.max = 9999999
+score.max = 999999999
 format.integer.pad = 1
 format.integer.separator = 
 format.decimal.places = 0
@@ -3809,11 +3810,18 @@ p1.enabled.training = 1
 
 ;-----------------------------------------------------------
 [Match]
-pos = 280,24
+pos = 200,24
 ;bg.spr = 
-text.font = 8,0, -1
+text.font = 8,0, 1
 text.text = STAGE %s
 
+enabled.arcade = 1
+enabled.bossrush = 1
+enabled.netplayteamcoop = 1
+enabled.scorechallenge = 1
+enabled.teamcoop = 1
+enabled.timeattack = 1
+enabled.timechallenge = 1
 enabled.netplaysurvivalcoop = 1
 enabled.survival = 1
 enabled.survivalcoop = 1
