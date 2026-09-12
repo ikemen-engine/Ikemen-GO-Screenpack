@@ -1,0 +1,161 @@
+;0 always import the palette, 1 import only if all colors doesn't match to any existing palette
+noDuplicatePal = 0
+
+[PaletteDef]
+group = 5300
+number = 0
+file = 5300-0.act
+
+[PaletteDef]
+group = 5410
+number = 0
+file = 5410-0.act
+
+[PaletteDef]
+group = 5600
+number = 0
+file = 5600-0.act
+
+[SpriteDef]
+group = 5300
+image = 0
+xaxis = 12
+yaxis = 11
+flags = 0
+file = 5300-0.png
+
+[SpriteDef]
+group = 5301
+image = 0
+xaxis = 16
+yaxis = 16
+flags = 0
+file = 5301-0.png
+
+[SpriteDef]
+group = 5302
+image = 0
+xaxis = 13
+yaxis = 16
+flags = 0
+file = 5302-0.png
+
+[SpriteDef]
+group = 5303
+image = 0
+xaxis = 13
+yaxis = 10
+flags = 0
+file = 5303-0.png
+
+[SpriteDef]
+group = 5304
+image = 0
+xaxis = 13
+yaxis = 12
+flags = 0
+file = 5304-0.png
+
+[SpriteDef]
+group = 5305
+image = 0
+xaxis = 14
+yaxis = 12
+flags = 0
+file = 5305-0.png
+
+[SpriteDef]
+group = 5306
+image = 0
+xaxis = 15
+yaxis = 17
+flags = 0
+file = 5306-0.png
+
+[SpriteDef]
+group = 5307
+image = 0
+xaxis = 15
+yaxis = 15
+flags = 0
+file = 5307-0.png
+
+[SpriteDef]
+group = 5308
+image = 0
+xaxis = 17
+yaxis = 17
+flags = 0
+file = 5308-0.png
+
+[SpriteDef]
+group = 5400
+image = 0
+xaxis = 41
+yaxis = 19
+flags = 0
+file = 5400-0.png
+
+[SpriteDef]
+group = 5401
+image = 0
+xaxis = 27
+yaxis = 36
+flags = 0
+file = 5401-0.png
+
+[SpriteDef]
+group = 5402
+image = 0
+xaxis = 31
+yaxis = 30
+flags = 0
+file = 5402-0.png
+
+[SpriteDef]
+group = 5410
+image = 0
+xaxis = 127
+yaxis = 336
+flags = 0
+file = 5410-0.png
+
+[SpriteDef]
+group = 5600
+image = 0
+xaxis = 38
+yaxis = 39
+flags = 0
+file = 5600-0.png
+
+[SpriteDef]
+group = 5601
+image = 0
+xaxis = 32
+yaxis = 39
+flags = 0
+file = 5601-0.png
+
+[SpriteDef]
+group = 5602
+image = 0
+xaxis = 32
+yaxis = 39
+flags = 0
+file = 5602-0.png
+
+[SpriteDef]
+group = 5603
+image = 0
+xaxis = 32
+yaxis = 39
+flags = 0
+file = 5603-0.png
+
+[SpriteDef]
+group = 5604
+image = 0
+xaxis = 32
+yaxis = 39
+flags = 0
+file = 5604-0.png

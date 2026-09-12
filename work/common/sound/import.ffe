@@ -1,0 +1,50 @@
+
+[SoundDef]
+group = 5
+sample = 0
+file = 5-0.wav
+
+[SoundDef]
+group = 5
+sample = 1
+file = 5-1.wav
+
+[SoundDef]
+group = 5
+sample = 2
+file = 5-2.wav
+
+[SoundDef]
+group = 5
+sample = 3
+file = 5-3.wav
+
+[SoundDef]
+group = 5
+sample = 4
+file = 5-4.wav
+
+[SoundDef]
+group = 6
+sample = 0
+file = 6-0.wav
+
+[SoundDef]
+group = 7
+sample = 0
+file = 7-0.wav
+
+[SoundDef]
+group = 7
+sample = 1
+file = 7-1.wav
+
+[SoundDef]
+group = 7
+sample = 2
+file = 7-2.wav
+
+[SoundDef]
+group = 20
+sample = 0
+file = 20-0.wav
