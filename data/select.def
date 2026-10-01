@@ -153,12 +153,11 @@
  ;   https://github.com/ikemen-engine/Ikemen-GO/wiki/Miscellaneous-Info#arcs
  ;
  ; - slot
- ;   IKEMEN feature: Slot parameter, which allows to assign multiple characters
- ;   into a single select screen slot, uses special syntax: declaration starts
- ;   with a line containing only 'slot = {'. The next and following lines have
- ;   characters added using the standard syntax. Closing '}' bracket in a new
- ;   line ends current slot declaration. Characters added this way can have few
- ;   extra parameters assigned:
+ ;   IKEMEN feature: Assigns multiple characters to a single select screen slot.
+ ;   Enclose character declarations in 'slot = { ... }'. Braces may share lines
+ ;   with character declarations. Use '|' to separate multiple character
+ ;   declarations on the same physical line. Characters added this way can use
+ ;   extra parameters:
  ;   - select: Set the paramvalue to the command that selects this character.
  ;     If multiple chars in this slot have the same paramvalue assigned, they
  ;     will be selected randomly.
@@ -185,6 +184,7 @@
  ; kfm, stages/mybg.def, includestage=0
  ; kfm, stages/mybg.def, arcadepath=data/arcade.lua
  ; kfm, stages/mybg.def, music=sound/song.mp3, order=3, ai=8, hidden=2
+ ; slot = {kfm, previous=d, next=w | SuaveDude, previous=d, next=w}
  ; slot = {
  ;      kfm, stages/mybg.def, previous=d, next=w
  ;      SuaveDude, previous=d, next=w, select=/s+a
