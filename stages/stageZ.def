@@ -19,7 +19,7 @@ startY = 0
 
 ; Left and right bounds of camera
 ; You may want to fiddle a bit with these values to make sure the
-background doesn't move too far or too little
+; background doesn't move too far or too little
 boundLeft = -165
 boundRight = 165
 
@@ -31,9 +31,22 @@ boundRight = 165
 boundHigh = -240
 boundLow = 0
 
+; Top and bot bounds of Z camera
+; Top is a negative number. Make it more negative if you want the
+; camera to be able to move further in the negative Z direction.
+; Bot is usually a positive number. Increase it to let the camera
+; move further in the positive Z direction.
+; If omitted, defaults to 0 for both.
+zboundtop = -20
+zboundbot = 20
+
 ; Horizontal distance player is from edge before camera starts to move
 ; left or right. Typically 50 or 60.
 tension = 50
+
+; Z distance player is from the screen edge before camera starts to move
+; up or down.
+ztension = 105
 
 ; These parameters control the distance between the highest and lowest
 ; characters where the camera will begin to move or zoom out
@@ -67,11 +80,13 @@ zoomin = 1.00
 ; p1StartY should be 0.
 p1StartX = -70          ;Starting x coordinates
 p1StartY = 0            ;Starting y coordinates
+p1StartZ = 0            ;Starting y coordinates
 p1Facing = 1            ;Direction player faces: 1=right, -1=left
 
 ; --- Player 2 ---
 p2StartX = 70
 p2StartY = 0
+p2StartZ = 0
 p2Facing = -1
 
 ; --- Common ---
@@ -157,10 +172,10 @@ offset = 0, 0
 [Reflection]
 ; Intensity of reflection (from 0 to 256).
 ; Set to 0 to have no reflection. Defaults to 0.
-intensity = 128
+intensity = 64
 
 ; See shadow color
-color = 256, 128, 0
+color = 202, 202, 256
 
 ; See shadow yScale
 yScale = 0.67
