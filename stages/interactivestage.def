@@ -21,12 +21,12 @@ startY = 0
 
 ; Left and right bounds of camera
 ; You may want to fiddle a bit with these values to make sure the
-background doesn't move too far or too little
+; background doesn't move too far or too little
 boundLeft = -30;
 boundRight = 30;
 
 ; High and low bound of camera
-; High is a negative number. Make is more negative if you want to
+; High is a negative number. Make it more negative if you want to
 ; camera to be able to move higher.
 ; Low should usually be 0.
 ; If omitted, defaults to -25 and 0 respectively
@@ -81,15 +81,6 @@ p2Facing = -1
 ; These values should be larger than boundLeft and boundRight
 leftBound = -1000
 rightBound =  1000
-
-;--------------------------------------------------------
-; Returning from DOS: Z-axis scaling
-;[Scaling]
-;topz = 0               ; Top z-coordinate for scaling reference
-;botz = 30              ; Bottom z-coordinate for scaling reference
-;topscale = 1.00        ; Scale to use at top z-coordinate
-;botscale = 1.10        ; Scale to use at bottom z-coordinate
-;depthtoscreen = 1.0    ; z-coordinate to y-offset conversion factor
 
 ; ----------------------------------------------------------
 [Bound]
@@ -155,10 +146,10 @@ offset = 0, 0
 [Reflection]
 ; Intensity of reflection (from 0 to 256).
 ; Set to 0 to have no reflection. Defaults to 0.
-intensity = 128
+intensity = 64
 
 ; See shadow color
-color = 256, 128, 0
+color = 202, 202, 256
 
 ; See shadow yScale
 yScale = 0.67
@@ -252,6 +243,7 @@ ID = 51
 scalestart = 0.65,0.45
 trans=addalpha
 alpha = 0,256
+
 [BG BackBannerTeen]
 type = normal
 spriteNo = 5, 0
@@ -276,6 +268,7 @@ layerno = 0
 tile = 1, 1
 tileSpacing = 0, 0
 ID = 3
+
 [BG WallWithHoleGrid]
 type = normal
 spriteNo = 4, 2
@@ -297,9 +290,10 @@ start = 0, 160
 delta = 0.8667, 1.0
 tile = 1, 0
 tilespacing = 0, 0
-width = 43,63.15;775, 1141; 0.8667, 1.2667
+width = 43, 63.15
 mask = 0
 ID = 4
+
 [BG FloorFront]
 type = parallax
 spriteno = 0, 2
@@ -308,7 +302,7 @@ start = 0, 160
 delta = 0.8667, 1.0
 tile = 1, 0
 tilespacing = 0, 0
-width = 43,63.15;775, 1141; 0.8667, 1.2667
+width = 43, 63.15
 mask = 0
 ID = 4
 
@@ -387,6 +381,7 @@ scalestart = 0.5,0.5
 trans = addalpha
 alpha = 196,196
 scalestart = 0.5,0.5
+
 [BG WindowReflection]
 type = normal
 spriteNo = 3, 1
@@ -410,6 +405,7 @@ scalestart = 0.5,0.5
 trans = addalpha
 alpha = 196,196
 scalestart = 0.5,0.5
+
 [BG WindowGridReflection]
 type = normal
 spriteNo = 4, 1
