@@ -24,7 +24,7 @@ boundLeft = -125
 boundRight = 125
 
 ; High and low bound of camera
-; High is a negative number. Make is more negative if you want to
+; High is a negative number. Make it more negative if you want to
 ; camera to be able to move higher.
 ; Low should usually be 0.
 ; If omitted, defaults to -25 and 0 respectively
