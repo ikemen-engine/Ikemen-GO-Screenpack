@@ -18,8 +18,7 @@
 	};
 	layout(push_constant, std430) uniform u {
 		vec4 palUV;
-		float p0, p1, p2, p3, p4, p5, p6, p7;
-		float p8, p9, p10, p11, p12, p13, p14, p15;
+		float param[16];
 	};
 	layout(binding = 2) uniform sampler2D tex;
 	layout(binding = 3) uniform sampler2D pal;
@@ -47,8 +46,7 @@
 	uniform int mask;
 	uniform bool isFlat, isRgba, isTrapez, neg;
 
-	uniform float p0, p1, p2, p3, p4, p5, p6, p7;
-	uniform float p8, p9, p10, p11, p12, p13, p14, p15;
+	uniform float param[16];
 
 	uniform float iTime;
 	uniform vec2 iResolution;
@@ -71,9 +69,9 @@ void main() {
     //screen_uv.y = 1.0 - screen_uv.y;
 
     // Obtain the parameters passed from CNS (use default values ​​if not set)
-    float amplitude = (p0 != 0.0) ? p0 : 0.0130;
-    float frequence = (p1 != 0.0) ? p1 : 25.00;
-    float speed     = (p2 != 0.0) ? p2 : 16.0;
+    float amplitude = (param[0] != 0.0) ? param[0] : 0.0130;
+    float frequence = (param[1] != 0.0) ? param[1] : 25.00;
+    float speed     = (param[2] != 0.0) ? param[2] : 16.0;
 	
 
     // Distort the background UV coordinates to create a wavy effect
