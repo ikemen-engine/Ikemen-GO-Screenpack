@@ -1,5 +1,5 @@
 # ZSS language: https: //github.com/ikemen-engine/Ikemen-GO/wiki/ZSS
-# ZSS syntax highlighter for Notepad +  + : https: //github.com/ikemen-engine/zss_npp
+# ZSS syntax highlighter for Notepad ++: https: //github.com/ikemen-engine/zss_npp
 #------------------------------------------------------------------------------------------
 # Commenting in ZSS
 # You may notice that the "; " character is now replaced with the "# " character.
@@ -123,7 +123,7 @@ if pos X > 0 && NumExplod(1010) > 0 {
 		if explodVar(1010, 0,anim) = 1007 && RandomRange(1,1000) = 10 {
 			modifyExplod{ID:1010; Vel: 0,0;anim:1006;}
 		}
-	}  
+	}
 }
 
 # These two define the right pillar collision size
@@ -343,28 +343,31 @@ if isHelper(1) {# let's run this only once
 		}
 	}
 	
-	if Map(JustDied) > 0 && Map(JustDied) < 9999 {Map(JustDied):=Map(JustDied)+1;}
+	if Map(JustDied) > 0 && Map(JustDied) < 9999 {
+		Map(JustDied):=Map(JustDied)+1;
+	}
 	
 	if Map(JustDied) > 50 && Map(JustDied) < 70
-	&& stageBGVar(50, 0, delta.x) != 17.10
-	{
-	   #The wobbling effect is done by stacking these shaded explods
-	   explod{
-		 ID:599;
-		 anim: 598;
-		 postype : left;
-		 pos:screenWidth/2,screenHeight/2;
-		 removetime: 40;
-		 scale :9999,9999;
-		 Shadow :0;
-		 ownpal :1;
-		 ontop :1;
-		 shader :"wobble";
-	     }
-		 
-	   #And this is another simple modifyStageBG idea to make a stage object invisible; just give it this trans
-	   #and add another parameter you can check via stageBGVar
-	   if Map(JustDied) = 60 {modifyStageBG{ID: 50; trans:addalpha;alpha:0,256;delta.x:17.10;}}
+	&& stageBGVar(50, 0, delta.x) != 17.10 {
+		# The wobbling effect is done by stacking these shaded explods
+		explod{
+			ID: 599;
+			anim: 598;
+			postype: left;
+			pos: screenWidth/2, screenHeight/2;
+			removetime: 40;
+			scale: 9999, 9999;
+			shadow: 0;
+			ownpal: 1;
+			ontop: 1;
+			shader.name: "wobble";
+		}
+
+		#And this is another simple modifyStageBG idea to make a stage object invisible; just give it this trans
+		#and add another parameter you can check via stageBGVar
+		if Map(JustDied) = 60 {
+			modifyStageBG{ID: 50; trans:addalpha;alpha:0,256;delta.x:17.10;}
+		}
 	}
 }
 # End isHelper(1)
@@ -378,8 +381,8 @@ if numHelper(1) = 0 {
 		name: "Left Pillar";
 		pos: -stageBackEdgeDist, 10;
 		ID: 1;
-		stateno : 200;
-		keyctrl : 0;
+		stateno: 200;
+		keyctrl: 0;
 		supermovetime: 0;
 		pausemovetime: 0;
 		size.ground.back: 1;
@@ -400,8 +403,8 @@ if numHelper(2) = 0 {
 		name: "Right Pillar";
 		pos: stageFrontEdgeDist, 10;
 		ID: 2;
-		stateno : 200;
-		keyctrl : 0;
+		stateno: 200;
+		keyctrl: 0;
 		supermovetime: 0;
 		pausemovetime: 0;
 		size.ground.back: 1;
