@@ -138,15 +138,15 @@ loading.xshear = 0.25
 loading.text = NOW LOADING...
 	
 footer.title.font = default-3x5.def, 0, 1, 191, 191, 191, 255, -1
-footer.title.offset = 5, 721
+footer.title.offset = 5, 715
 footer.title.scale = 3,3
 
 footer.info.font = default-3x5.def, 0, 0, 191, 191, 191, 255, -1
-footer.info.offset = 640, 721
+footer.info.offset = 640, 715
 footer.info.scale = 3,3
 
 footer.version.font = default-3x5.def, 0, -1, 191, 191, 191, 255, -1
-footer.version.offset = 1275, 721
+footer.version.offset = 1275, 715
 footer.version.scale = 3,3
 
 footer.overlay.col = 0, 0, 64
@@ -165,8 +165,6 @@ connecting.overlay.alpha = 0, 128
 textinput.offset = 189, 393
 textinput.font = 7,0,1
 textinput.scale = 1.0, 1.0
-textinput.name.text = Enter Host display name, e.g. John.\nExisting entries can be removed with DELETE button.
-textinput.address.text = Enter Host IP address, e.g. 127.0.0.1\nCopied text can be pasted with INSERT button.
 ;textinput.overlay.window = 0, 0, 1280, 720
 textinput.overlay.col = 0, 0, 0
 textinput.overlay.alpha = 0, 128
@@ -2055,11 +2053,6 @@ cancel.snd = 100, 2
 textinput.font = 7,0,1
 textinput.offset = 75, 96
 textinput.scale = 1.0, 1.0
-textinput.port.text = Type in Host Port, e.g. 7500.\nPress ENTER to accept.\nPress ESC to cancel.
-textinput.reswidth.text = Type in screen width.\nPress ENTER to accept.\nPress ESC to cancel.
-textinput.resheight.text = Type in screen height.\nPress ENTER to accept.\nPress ESC to cancel.
-textinput.aspectwidth.text = Type in aspect width.\nPress ENTER to accept.\nPress ESC to cancel.
-textinput.aspectheight.text = Type in aspect height.\nPress ENTER to accept.\nPress ESC to cancel.
 ;textinput.overlay.window = 0, 0, 1280, 720
 textinput.overlay.col = 0, 0, 0
 textinput.overlay.alpha = 0, 128
