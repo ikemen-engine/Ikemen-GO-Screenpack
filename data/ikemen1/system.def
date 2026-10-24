@@ -389,8 +389,8 @@ p1.cursor.done.scale = .25,.25
 p1.cursor.move.snd = 100,0
 p1.cursor.done.snd = 100,1
 p1.random.move.snd = 100,0
-p2.cursor.tween.factor = 0.25, 0.25
-p2.cursor.startcell = 0,0
+p2.cursor.tween.factor = 0.5, 0.5
+p2.cursor.startcell = 0,7
 p2.cursor.active.anim = 170
 p2.cursor.active.scale = .25,.25
 p2.cursor.done.spr = 171,0
@@ -399,6 +399,7 @@ p2.cursor.blink = 0                ;1 to blink p2's cursor if overlapping p1's
 p2.cursor.move.snd = 100,0
 p2.cursor.done.snd = 100,1
 p2.random.move.snd = 100,0
+p3.cursor.tween.factor = 0.5, 0.5
 p3.cursor.startcell = 3,0
 p3.cursor.active.anim = 172
 p3.cursor.active.scale = .25,.25
@@ -407,7 +408,8 @@ p3.cursor.done.scale = .25,.25
 p3.cursor.move.snd = 100,0
 p3.cursor.done.snd = 100,1
 p3.random.move.snd = 100,0
-p4.cursor.startcell = 3,2
+p4.cursor.tween.factor = 0.5, 0.5
+p4.cursor.startcell = 3,7
 p4.cursor.active.anim = 174
 p4.cursor.active.scale = .25,.25
 p4.cursor.done.spr = 175,0
@@ -529,6 +531,10 @@ cell.slot.offset = 0, 0
 cell.slot.facing = 1
 cell.slot.scale = .25,.25
 cell.slot.layerno = 2
+
+;Char Slot Swap Sound
+p1.swap.snd = 100, 0
+p2.swap.snd = 100, 0
 
 ;Main big portraits
 p1.face.anim = 0                   ;Animated portraits
@@ -695,6 +701,18 @@ stage.portrait.loading.scale = 1.0, 1.0
 stage.portrait.loading.layerno = 2
 stage.portrait.window = 521, 567, 759, 665
 stage.portrait.layerno = 2
+
+;Stage Slot Indicator
+stage.portrait.slot.anim = 156
+;stage.portrait.slot.spr = 155, 0
+stage.portrait.slot.offset = -27, -197
+stage.portrait.slot.facing = 1
+stage.portrait.slot.angle = 0
+stage.portrait.slot.scale = 0.11, 0.11
+stage.portrait.slot.layerno = 2
+
+;Stage Slot Swap Sound
+stage.swap.snd = 100, 0
 
 ;Record
 record.font = 3,0,0
