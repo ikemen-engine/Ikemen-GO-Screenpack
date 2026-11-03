@@ -172,10 +172,10 @@ offset = 0, 0
 [Reflection]
 ; Intensity of reflection (from 0 to 256).
 ; Set to 0 to have no reflection. Defaults to 0.
-intensity = 128
+intensity = 64
 
 ; See shadow color
-color = 256, 128, 0
+color = 202, 202, 256
 
 ; See shadow yScale
 yScale = 0.67

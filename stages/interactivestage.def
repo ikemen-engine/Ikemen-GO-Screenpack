@@ -22,8 +22,8 @@ startY = 0
 ; Left and right bounds of camera
 ; You may want to fiddle a bit with these values to make sure the
 ; background doesn't move too far or too little
-boundLeft = -30;
-boundRight = 30;
+boundLeft = -30
+boundRight = 30
 
 ; High and low bound of camera
 ; High is a negative number. Make it more negative if you want to
