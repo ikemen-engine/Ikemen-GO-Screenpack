@@ -154,11 +154,11 @@
  ;
  ; - slot
  ;   IKEMEN feature: Assigns multiple characters to a single select screen slot.
- ;   Enclose character declarations in 'slot = { ... }'. Braces may share lines
- ;   with character declarations. Use '|' to separate multiple character
- ;   declarations on the same physical line. Keys that cycle through the slot
- ;   characters are set in the screenpack via [Select Info] cell.slot.next and
- ;   cell.slot.previous. Characters added this way can use an extra parameter:
+ ;   Enclose character declarations in 'slot { ... }', one per line (a trailing
+ ;   comma is optional).
+ ;   Keys that cycle through the slot characters are set in the screenpack via
+ ;   [Select Info] cell.slot.next and cell.slot.previous. Characters added this
+ ;   way can use an extra parameter:
  ;   - select: command that picks this character (MUGEN CMD syntax, commas
  ;     allowed). Characters sharing a command are picked at random.
  ;
@@ -179,15 +179,17 @@
  ; kfm, stages/mybg.def, includestage=0
  ; kfm, stages/mybg.def, arcadepath=data/arcade.lua
  ; kfm, stages/mybg.def, music=sound/song.mp3, order=3, ai=8, hidden=2
- ; slot = {kfm | SuaveDude}
- ; slot = {
+ ; slot {
  ;      kfm, stages/mybg.def
  ;      SuaveDude, select=/s+a
  ; }
  ;
  ;Insert your characters below.
 
-slot = {kfm_zss, stages/kfm.def | kfm720, stages/kfm.def, order=0}
+slot {
+    kfm_zss, stages/kfm.def
+    kfm720, stages/kfm.def, order=0
+}
 kfm_zaxis, stages/kfm.def, order=0
 randomselect
 
@@ -247,11 +249,11 @@ randomselect
  ;
  ; - slot
  ;   IKEMEN feature: Assigns multiple stages to a single stage select slot.
- ;   Enclose stage declarations in 'slot = { ... }'. Braces may share lines
- ;   with stages declarations. Use '|' to separate multiple stages declarations
- ;   on the same physical line. Keys that cycle through the slot stages are set
- ;   in the screenpack via [Select Info] cell.slot.next and cell.slot.previous.
- ;   Stages added this way can use an extra parameter:
+ ;   Enclose stage declarations in 'slot { ... }', one per line (a trailing
+ ;   comma is optional).
+ ;   Keys that cycle through the slot stages are set in the screenpack via
+ ;   [Select Info] cell.slot.next and cell.slot.previous. Stages added this way
+ ;   can use an extra parameter:
  ;   - select: command that picks this stage (MUGEN CMD syntax, commas
  ;     allowed). Stages sharing a command are picked at random.
  ;
@@ -267,16 +269,22 @@ randomselect
  ;Examples:
  ; stages/mybg.def, music=sound/song.mp3, music=sound/song2.mp3
  ; stages/mybg.def, order=3
- ; slot = {stages/stage0.def | stages/stage1.def}
- ; slot = {
+ ; slot {
  ;      stages/stage0.def
  ;      stages/stage1.def, select=/s+a
  ; }
  ;
  ;Insert your stages below.
 
-slot = {stages/stage1.def | stages/stage0.def | stages/stage0-720.def}
-slot = {stages/stage3d.def | stages/stage3d_outline.def}
+slot {
+    stages/stage1.def
+    stages/stage0.def
+    stages/stage0-720.def
+}
+slot {
+    stages/stage3d.def
+    stages/stage3d_outline.def
+}
 stages/stageZ.def
 stages/interactivestage.def
 stages/kfm.def
