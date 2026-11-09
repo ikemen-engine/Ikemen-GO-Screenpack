@@ -1,0 +1,363 @@
+; Button Mapping art (groups 100-102): SDL2 Gamepad Tool assets, unchanged. See mapping/LICENSE.
+; Test Setup art (groups 103-104): Kenney Input Prompts, CC0. The PNG files are unchanged.
+noDuplicatePal = 0
+
+[SpriteDef]
+group = 100
+image = 0
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Front.png
+
+[SpriteDef]
+group = 100
+image = 1
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Back.png
+
+[SpriteDef]
+group = 100
+image = 2
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Rotate.png
+
+[SpriteDef]
+group = 101
+image = 0
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Button-3.png
+
+[SpriteDef]
+group = 101
+image = 1
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Button-2.png
+
+[SpriteDef]
+group = 101
+image = 2
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Button-4.png
+
+[SpriteDef]
+group = 101
+image = 3
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Button-1.png
+
+[SpriteDef]
+group = 101
+image = 4
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Select.png
+
+[SpriteDef]
+group = 101
+image = 5
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-X.png
+
+[SpriteDef]
+group = 101
+image = 6
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Start.png
+
+[SpriteDef]
+group = 101
+image = 7
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Stick-Left.png
+
+[SpriteDef]
+group = 101
+image = 8
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Stick-Right.png
+
+[SpriteDef]
+group = 101
+image = 9
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Shift-Left.png
+
+[SpriteDef]
+group = 101
+image = 10
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Shift-Right.png
+
+[SpriteDef]
+group = 101
+image = 11
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Dpad-Up.png
+
+[SpriteDef]
+group = 101
+image = 12
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Dpad-Down.png
+
+[SpriteDef]
+group = 101
+image = 13
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Dpad-Left.png
+
+[SpriteDef]
+group = 101
+image = 14
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Dpad-Right.png
+
+[SpriteDef]
+group = 101
+image = 15
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Share.png
+
+[SpriteDef]
+group = 101
+image = 16
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-BackBtn-1.png
+
+[SpriteDef]
+group = 101
+image = 17
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-BackBtn-2.png
+
+[SpriteDef]
+group = 101
+image = 18
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-BackBtn-3.png
+
+[SpriteDef]
+group = 101
+image = 19
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-BackBtn-4.png
+
+[SpriteDef]
+group = 101
+image = 20
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Touch.png
+
+[SpriteDef]
+group = 102
+image = 0
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-LStick-Arrow-Left.png
+
+[SpriteDef]
+group = 102
+image = 1
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-LStick-Arrow-Right.png
+
+[SpriteDef]
+group = 102
+image = 2
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-LStick-Arrow-Up.png
+
+[SpriteDef]
+group = 102
+image = 3
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-LStick-Arrow-Down.png
+
+[SpriteDef]
+group = 102
+image = 4
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-RStick-Arrow-Left.png
+
+[SpriteDef]
+group = 102
+image = 5
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-RStick-Arrow-Right.png
+
+[SpriteDef]
+group = 102
+image = 6
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-RStick-Arrow-Up.png
+
+[SpriteDef]
+group = 102
+image = 7
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-RStick-Arrow-Down.png
+
+[SpriteDef]
+group = 102
+image = 8
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Trigger-Left.png
+
+[SpriteDef]
+group = 102
+image = 9
+xaxis = 275
+yaxis = 180
+flags = 0
+file = mapping/PadSetup-Trigger-Right.png
+
+[SpriteDef]
+group = 103
+image = 0
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/generic_button_circle_fill.png
+
+[SpriteDef]
+group = 103
+image = 1
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/generic_button_circle_outline.png
+
+[SpriteDef]
+group = 103
+image = 2
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/generic_joystick_red.png
+
+[SpriteDef]
+group = 104
+image = 0
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/flair_arrows_up.png
+
+[SpriteDef]
+group = 104
+image = 1
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/flair_arrows_down.png
+
+[SpriteDef]
+group = 104
+image = 2
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/flair_arrows_left.png
+
+[SpriteDef]
+group = 104
+image = 3
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/flair_arrows_right.png
+
+[SpriteDef]
+group = 104
+image = 4
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/flair_arrows_diagonal_up_left.png
+
+[SpriteDef]
+group = 104
+image = 5
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/flair_arrows_diagonal_up_right.png
+
+[SpriteDef]
+group = 104
+image = 6
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/flair_arrows_diagonal_down_left.png
+
+[SpriteDef]
+group = 104
+image = 7
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/flair_arrows_diagonal_down_right.png
