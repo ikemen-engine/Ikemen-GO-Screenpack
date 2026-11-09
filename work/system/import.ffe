@@ -1261,6 +1261,168 @@ flags = 0
 file = 204-0.png
 
 [SpriteDef]
+group = 300
+image = 1
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-1.png
+
+[SpriteDef]
+group = 300
+image = 2
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-2.png
+
+[SpriteDef]
+group = 300
+image = 3
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-3.png
+
+[SpriteDef]
+group = 300
+image = 4
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-4.png
+
+[SpriteDef]
+group = 300
+image = 5
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-5.png
+
+[SpriteDef]
+group = 300
+image = 6
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-6.png
+
+[SpriteDef]
+group = 300
+image = 7
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-7.png
+
+[SpriteDef]
+group = 300
+image = 8
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-8.png
+
+[SpriteDef]
+group = 300
+image = 9
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-9.png
+
+[SpriteDef]
+group = 300
+image = 11
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-11.png
+
+[SpriteDef]
+group = 300
+image = 12
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-12.png
+
+[SpriteDef]
+group = 300
+image = 13
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-13.png
+
+[SpriteDef]
+group = 300
+image = 14
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-14.png
+
+[SpriteDef]
+group = 300
+image = 15
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-15.png
+
+[SpriteDef]
+group = 300
+image = 16
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-16.png
+
+[SpriteDef]
+group = 300
+image = 17
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-17.png
+
+[SpriteDef]
+group = 300
+image = 18
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-18.png
+
+[SpriteDef]
+group = 300
+image = 19
+xaxis = 0
+yaxis = 0
+flags = 0
+palette = 300,0
+file = 300-19.png
+
+[SpriteDef]
 group = 400
 image = 0
 xaxis = 0
@@ -2640,3 +2802,11 @@ xaxis = 0
 yaxis = 0
 flags = 0
 file = 1000-1.png
+
+[SpriteDef]
+group = 1100
+image = 0
+xaxis = 0
+yaxis = 0
+flags = 0
+file = 1100-0.png
