@@ -1,0 +1,21 @@
+; Open Sans SemiBold rasterized at 14px (10px cap height), with a 1px black outline.
+; Anti-aliased 32-bit RGBA glyphs. Each sprite is the glyph's advance cell
+; plus 3px transparent padding per side for overhangs (xaxis = 3).
+; Glyphs derived from Open Sans by Steve Matteson, Apache License 2.0
+; (see Open_Sans/LICENSE.txt). Modified: rasterized to bitmaps, outline added.
+
+[FNT v2]
+fntversion = 2,00
+name = "Open Sans SemiBold rasterized at 14px (10px cap height)"
+
+[Def]
+Type = bitmap
+BankType = sprite
+; Width: space advance + 6px padding. Height: cell from the cap top outline to the
+; baseline outline row; text y is that bottom row. Inline glyphs scale to this height.
+Size = 11,12
+; Width -6 cancels the sprite padding, so letters advance by the font's own widths.
+; Height 8 gives the font's natural line height (22px per line).
+Spacing = -6,8
+Offset = 0,0
+File = ConfigSetup.sff
