@@ -1441,8 +1441,9 @@ Interpolate Scale
 ;Demo mode definition
 [Demo Mode]
 enabled = 1               ;Set to 1 to enable demo mode, 0 to disable
-select.enabled = 0        ;Set to 1 to display select screen, 0 to disable
-vsscreen.enabled = 0      ;Set to 1 to display versus screen, 0 to disable
+select.title = DEMO MODE  ;Title displayed on the select screen during demo mode
+select.enabled = 1        ;Set to 1 to display select screen, 0 to disable
+vsscreen.enabled = 1      ;Set to 1 to display versus screen, 0 to disable
 fadein.time = 50          ;Duration of the fade-in effect
 fadein.col = 0, 0, 0      ;Color of the fade-in
 fadeout.time = 50         ;Duration of the fade-out effect
