@@ -1855,6 +1855,10 @@ sounds.enabled = 0        ;Set to 0 to disable char sounds during Victory Screen
 time = 360                ;Time to show screen
 fadein.time = 8
 fadeout.time = 15
+
+; If set to 0, the screen doesn't fade out when [Rematch Info] follows it.
+rematch.fadeout = 0
+
 ;Winner's portrait and name
 p1.offset = 150, 80
 p1.spr = 9000,2, 9000,1
@@ -1891,67 +1895,6 @@ hint.scale = 1.0, 1.0
 
 done.action = A, MOUSE:LEFT
 cancel.action = B, MOUSE:RIGHT
-
-; Results show Player 1 on the left and Player 2 on the right.
-results.enabled = 1
-results.time = 180
-rematch.enabled = 1
-
-results.p1.title.font = 3, 3, 1
-results.p1.title.offset = 40, 543
-results.p1.title.scale = 1.0, 1.0
-
-results.p1.wins.font = 0, 0, 1, 191, 191, 191
-results.p1.wins.offset = 40, 576
-results.p1.wins.scale = 1.0, 1.0
-
-results.p1.wins.value.font = 0, 0, -1, 191, 191, 191
-results.p1.wins.value.offset = 400, 576
-results.p1.wins.value.scale = 1.0, 1.0
-
-results.p1.winstreak.font = 0, 0, 1, 191, 191, 191
-results.p1.winstreak.offset = 40, 604
-results.p1.winstreak.scale = 1.0, 1.0
-
-results.p1.winstreak.value.font = 0, 0, -1, 191, 191, 191
-results.p1.winstreak.value.offset = 400, 604
-results.p1.winstreak.value.scale = 1.0, 1.0
-
-results.p1.winrate.font = 0, 0, 1, 191, 191, 191
-results.p1.winrate.offset = 40, 632
-results.p1.winrate.scale = 1.0, 1.0
-
-results.p1.winrate.value.font = 0, 0, -1, 191, 191, 191
-results.p1.winrate.value.offset = 400, 632
-results.p1.winrate.value.scale = 1.0, 1.0
-
-results.p2.title.font = 3, 3, -1
-results.p2.title.offset = 1240, 543
-results.p2.title.scale = 1.0, 1.0
-
-results.p2.wins.font = 0, 0, -1, 191, 191, 191
-results.p2.wins.offset = 1240, 576
-results.p2.wins.scale = 1.0, 1.0
-
-results.p2.wins.value.font = 0, 0, 1, 191, 191, 191
-results.p2.wins.value.offset = 880, 576
-results.p2.wins.value.scale = 1.0, 1.0
-
-results.p2.winstreak.font = 0, 0, -1, 191, 191, 191
-results.p2.winstreak.offset = 1240, 604
-results.p2.winstreak.scale = 1.0, 1.0
-
-results.p2.winstreak.value.font = 0, 0, 1, 191, 191, 191
-results.p2.winstreak.value.offset = 880, 604
-results.p2.winstreak.value.scale = 1.0, 1.0
-
-results.p2.winrate.font = 0, 0, -1, 191, 191, 191
-results.p2.winrate.offset = 1240, 632
-results.p2.winrate.scale = 1.0, 1.0
-
-results.p2.winrate.value.font = 0, 0, 1, 191, 191, 191
-results.p2.winrate.value.offset = 880, 632
-results.p2.winrate.value.scale = 1.0, 1.0
 
 ;----------------------------
 ;Victory screen background
@@ -2020,6 +1963,85 @@ velocity = -.125,0
 202,1, 2,0, 1
 202,1, 1,0, 1
 202,1, 0,0, -1
+
+;----------------------------
+;Rematch screen definition
+[Rematch Info]
+enabled = 1
+; Frames before the rematch menu opens.
+time = 0
+
+; Parameters reused from [Victory Screen]:
+;   keepside.enabled, winner.teamko.enabled and the p1-p8 portrait parameters
+;   (p1.spr, p1.offset, p1.scale, p1.face2.*, p1.lose.*, p1.state, etc.).
+;   To change one for this screen only, copy it from [Victory Screen] into this
+;   group and edit the value. Character names and win quotes are not shown.
+;   Changing any portrait parameter here makes this screen create its portraits
+;   again, so they don't continue the victory screen animations.
+; Parameters reused from [Pause Menu]:
+;   title, menu, movelist, hint, cursor, enter, exit, cancel and overlay parameters,
+;   except texts. Copy them from [Pause Menu] into this group to change them.
+
+p1.title.font = 3, 3, 1
+p1.title.offset = 40, 543
+p1.title.scale = 1.0, 1.0
+
+p1.wins.font = 0, 0, 1, 191, 191, 191
+p1.wins.offset = 40, 576
+p1.wins.scale = 1.0, 1.0
+
+p1.wins.value.font = 0, 0, -1, 191, 191, 191
+p1.wins.value.offset = 400, 576
+p1.wins.value.scale = 1.0, 1.0
+
+p1.winstreak.font = 0, 0, 1, 191, 191, 191
+p1.winstreak.offset = 40, 604
+p1.winstreak.scale = 1.0, 1.0
+
+p1.winstreak.value.font = 0, 0, -1, 191, 191, 191
+p1.winstreak.value.offset = 400, 604
+p1.winstreak.value.scale = 1.0, 1.0
+
+p1.winrate.font = 0, 0, 1, 191, 191, 191
+p1.winrate.offset = 40, 632
+p1.winrate.scale = 1.0, 1.0
+
+p1.winrate.value.font = 0, 0, -1, 191, 191, 191
+p1.winrate.value.offset = 400, 632
+p1.winrate.value.scale = 1.0, 1.0
+
+p2.title.font = 3, 3, -1
+p2.title.offset = 1240, 543
+p2.title.scale = 1.0, 1.0
+
+p2.wins.font = 0, 0, -1, 191, 191, 191
+p2.wins.offset = 1240, 576
+p2.wins.scale = 1.0, 1.0
+
+p2.wins.value.font = 0, 0, 1, 191, 191, 191
+p2.wins.value.offset = 880, 576
+p2.wins.value.scale = 1.0, 1.0
+
+p2.winstreak.font = 0, 0, -1, 191, 191, 191
+p2.winstreak.offset = 1240, 604
+p2.winstreak.scale = 1.0, 1.0
+
+p2.winstreak.value.font = 0, 0, 1, 191, 191, 191
+p2.winstreak.value.offset = 880, 604
+p2.winstreak.value.scale = 1.0, 1.0
+
+p2.winrate.font = 0, 0, -1, 191, 191, 191
+p2.winrate.offset = 1240, 632
+p2.winrate.scale = 1.0, 1.0
+
+p2.winrate.value.font = 0, 0, 1, 191, 191, 191
+p2.winrate.value.offset = 880, 632
+p2.winrate.value.scale = 1.0, 1.0
+
+;----------------------------
+;Rematch screen background
+;[RematchBGdef]
+; If this group is not declared, [VictoryBgDef] is used and keeps running from the victory screen.
 
 ;----------------------------
 ;Win screen definition
