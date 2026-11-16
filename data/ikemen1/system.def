@@ -593,8 +593,8 @@ p2.face.slot.angle = 0
 p2.face.slot.scale = 0.2,0.2
 p2.face.slot.layerno = 2
 
-p1.face.done.anim = 181            ;Portrait to use when selection is confirmed
-p2.face.done.anim = 181
+p1.face.done.anim = 181, 0            ;Portrait to use when selection is confirmed
+p2.face.done.anim = 181, 0
 
 ;Secondary big portraits
 p1.face2.spr = 9000,1              ;Secondary portrait
@@ -1091,8 +1091,8 @@ p2.spacing = 100,0
 p2.padding = 1
 p2.applypal = 1
 
-p1.done.anim = 181
-p2.done.anim = 181
+p1.done.anim = 181, 0
+p2.done.anim = 181, 0
 
 ;Names
 p1.name.num = 1              ;Not used for co-op
@@ -1277,7 +1277,6 @@ stage.text = Next Stage: %s
 stage.offset = 0, -10
 stage.font = 3,0,0
 stage.scale = 0.6, 0.6
-;stage.portrait.anim = 
 stage.portrait.spr = 9000,1
 stage.portrait.offset = -121, -141
 stage.portrait.scale = 0.25, 0.25
@@ -1822,7 +1821,7 @@ fadein.time = 8
 fadeout.time = 15
 ;Winner's portrait and name
 p1.offset = 150, 80
-p1.spr = 9000,2
+p1.spr = 9000,2, 9000,1
 p1.layerno = 2
 p1.facing = 1
 p1.scale = 0.8,0.8
@@ -1833,7 +1832,7 @@ p1.name.layerno = 2
 p1.applypal = 1
 ;Loser's Portrait
 p2.offset = 1130, 80
-p2.spr = 9000,2
+p2.spr = 9000,2, 9000,1
 p2.layerno = 1
 p2.facing = -1
 p2.scale = 0.8,0.8
@@ -2542,12 +2541,12 @@ p2.bg.anim = 701
 p2.bg.offset = 0, 432
 p2.bg.facing = 1
 p2.bg.scale = 3.0, 3.0
-p1.face.spr = 9000,3
+p1.face.spr = 9000, 1
 p1.face.offset = 2, 1
 p1.face.facing = 1
 p1.face.scale = 0.51, 0.51
 ;p1.face.window = 0, 0, 1280, 720
-p2.face.spr = 9000,3
+p2.face.spr = 9000, 1
 p2.face.offset = 1280, 337
 p2.face.facing = -1
 p2.face.scale = 0.51, 0.51
