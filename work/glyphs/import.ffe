@@ -1,11 +1,39 @@
 ;Kenney Input Prompts 1.5, trimmed to the glyphs listed in the motif.
-;Every icon is imported once. [Glyphs] names each keyboard and gamepad
-;sprite, and [Controller Glyphs] points controllers at their own group.
-;Groups below 1000 are the original command-list glyphs.
-;1051 keyboard, 1200 Xbox (base gamepad), 1300 PlayStation,
-;1400 Nintendo Switch 1/2, 1500 arcade.
-;Index 30 and up in each family is device artwork for the icon list.
-;Shared artwork is imported once; [Controller Glyphs] maps the rest.
+;Every icon is imported once. [Glyphs] names each keyboard, mouse and
+;gamepad sprite, and [Controller Glyphs] points each glyph pack at a group.
+;
+;Groups:
+;  below 1000  original command-list glyphs
+;  1000        keyboard
+;  1100        mouse
+;  1200        generic gamepad: the full set, without button colors
+;  1300        Xbox family: only what differs from the generic gamepad
+;  1400        PlayStation family
+;  1500        Nintendo Switch family
+;  1600        Nintendo GameCube
+;  1700        Steam Controller: the 2015 one, 50+ and icon 101 for the new one
+;  1800        Steam Deck
+;  2000        shared hint art (<hold>)
+;  3000        Test Setup engine buttons with their letter, in engine button
+;              order: A, B, C, X, Y, Z, Start, D, W, Menu
+;  3001        Controller Mapping and Test Setup stick: 0-7 direction arrows
+;              (up, down, left, right, up-left, up-right, down-left,
+;              down-right), 8 the stick itself
+;
+;Gamepad images use the same number for the same control in every group,
+;in virtual controller order. A family group may skip an image, the
+;generic gamepad one is used then:
+;   0-3   D-pad up, down, left, right
+;   4-7   A, B, X, Y
+;   8-9   Start, Back
+;  10-13  LB, RB, LT, RT
+;  14-17  left stick up, down, left, right
+;  18-21  right stick up, down, left, right
+;  22-23  LS, RS (stick press)
+;  24     Home
+;  25     whole D-pad (Controller Mapping art)
+;  50+    alternatives a glyph pack can pick, e.g. Xbox 360 Back/Start
+;  100+   device artwork shown when choosing a glyph pack (keyboard too)
 ;0 always import the palette, 1 import only if all colors doesn't match to any existing palette
 noDuplicatePal = 0
 
@@ -653,7 +681,7 @@ file = commandlist/144-0.png
 group = 1000
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_enter_outline.png
 
@@ -661,7 +689,7 @@ file = keyboard/keyboard_enter_outline.png
 group = 1000
 image = 1
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_escape_outline.png
 
@@ -669,7 +697,7 @@ file = keyboard/keyboard_escape_outline.png
 group = 1000
 image = 2
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_backspace_icon_alternative_outline.png
 
@@ -677,7 +705,7 @@ file = keyboard/keyboard_backspace_icon_alternative_outline.png
 group = 1000
 image = 3
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_tab_outline.png
 
@@ -685,7 +713,7 @@ file = keyboard/keyboard_tab_outline.png
 group = 1000
 image = 4
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_space_outline.png
 
@@ -693,7 +721,7 @@ file = keyboard/keyboard_space_outline.png
 group = 1000
 image = 5
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_apostrophe_outline.png
 
@@ -701,7 +729,7 @@ file = keyboard/keyboard_apostrophe_outline.png
 group = 1000
 image = 6
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_comma_outline.png
 
@@ -709,7 +737,7 @@ file = keyboard/keyboard_comma_outline.png
 group = 1000
 image = 7
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_minus_outline.png
 
@@ -717,7 +745,7 @@ file = keyboard/keyboard_minus_outline.png
 group = 1000
 image = 8
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_period_outline.png
 
@@ -725,7 +753,7 @@ file = keyboard/keyboard_period_outline.png
 group = 1000
 image = 9
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_slash_forward_outline.png
 
@@ -733,7 +761,7 @@ file = keyboard/keyboard_slash_forward_outline.png
 group = 1000
 image = 10
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_0_outline.png
 
@@ -741,7 +769,7 @@ file = keyboard/keyboard_0_outline.png
 group = 1000
 image = 11
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_1_outline.png
 
@@ -749,7 +777,7 @@ file = keyboard/keyboard_1_outline.png
 group = 1000
 image = 12
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_2_outline.png
 
@@ -757,7 +785,7 @@ file = keyboard/keyboard_2_outline.png
 group = 1000
 image = 13
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_3_outline.png
 
@@ -765,7 +793,7 @@ file = keyboard/keyboard_3_outline.png
 group = 1000
 image = 14
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_4_outline.png
 
@@ -773,7 +801,7 @@ file = keyboard/keyboard_4_outline.png
 group = 1000
 image = 15
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_5_outline.png
 
@@ -781,7 +809,7 @@ file = keyboard/keyboard_5_outline.png
 group = 1000
 image = 16
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_6_outline.png
 
@@ -789,7 +817,7 @@ file = keyboard/keyboard_6_outline.png
 group = 1000
 image = 17
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_7_outline.png
 
@@ -797,7 +825,7 @@ file = keyboard/keyboard_7_outline.png
 group = 1000
 image = 18
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_8_outline.png
 
@@ -805,7 +833,7 @@ file = keyboard/keyboard_8_outline.png
 group = 1000
 image = 19
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_9_outline.png
 
@@ -813,7 +841,7 @@ file = keyboard/keyboard_9_outline.png
 group = 1000
 image = 20
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_semicolon_outline.png
 
@@ -821,7 +849,7 @@ file = keyboard/keyboard_semicolon_outline.png
 group = 1000
 image = 21
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_equals_outline.png
 
@@ -829,7 +857,7 @@ file = keyboard/keyboard_equals_outline.png
 group = 1000
 image = 22
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_bracket_open_outline.png
 
@@ -837,7 +865,7 @@ file = keyboard/keyboard_bracket_open_outline.png
 group = 1000
 image = 23
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_slash_back_outline.png
 
@@ -845,7 +873,7 @@ file = keyboard/keyboard_slash_back_outline.png
 group = 1000
 image = 24
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_bracket_close_outline.png
 
@@ -853,7 +881,7 @@ file = keyboard/keyboard_bracket_close_outline.png
 group = 1000
 image = 25
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_a_outline.png
 
@@ -861,7 +889,7 @@ file = keyboard/keyboard_a_outline.png
 group = 1000
 image = 26
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_b_outline.png
 
@@ -869,7 +897,7 @@ file = keyboard/keyboard_b_outline.png
 group = 1000
 image = 27
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_c_outline.png
 
@@ -877,7 +905,7 @@ file = keyboard/keyboard_c_outline.png
 group = 1000
 image = 28
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_d_outline.png
 
@@ -885,7 +913,7 @@ file = keyboard/keyboard_d_outline.png
 group = 1000
 image = 29
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_e_outline.png
 
@@ -893,7 +921,7 @@ file = keyboard/keyboard_e_outline.png
 group = 1000
 image = 30
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_f_outline.png
 
@@ -901,7 +929,7 @@ file = keyboard/keyboard_f_outline.png
 group = 1000
 image = 31
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_g_outline.png
 
@@ -909,7 +937,7 @@ file = keyboard/keyboard_g_outline.png
 group = 1000
 image = 32
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_h_outline.png
 
@@ -917,7 +945,7 @@ file = keyboard/keyboard_h_outline.png
 group = 1000
 image = 33
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_i_outline.png
 
@@ -925,7 +953,7 @@ file = keyboard/keyboard_i_outline.png
 group = 1000
 image = 34
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_j_outline.png
 
@@ -933,7 +961,7 @@ file = keyboard/keyboard_j_outline.png
 group = 1000
 image = 35
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_k_outline.png
 
@@ -941,7 +969,7 @@ file = keyboard/keyboard_k_outline.png
 group = 1000
 image = 36
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_l_outline.png
 
@@ -949,7 +977,7 @@ file = keyboard/keyboard_l_outline.png
 group = 1000
 image = 37
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_m_outline.png
 
@@ -957,7 +985,7 @@ file = keyboard/keyboard_m_outline.png
 group = 1000
 image = 38
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_n_outline.png
 
@@ -965,7 +993,7 @@ file = keyboard/keyboard_n_outline.png
 group = 1000
 image = 39
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_o_outline.png
 
@@ -973,7 +1001,7 @@ file = keyboard/keyboard_o_outline.png
 group = 1000
 image = 40
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_p_outline.png
 
@@ -981,7 +1009,7 @@ file = keyboard/keyboard_p_outline.png
 group = 1000
 image = 41
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_q_outline.png
 
@@ -989,7 +1017,7 @@ file = keyboard/keyboard_q_outline.png
 group = 1000
 image = 42
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_r_outline.png
 
@@ -997,7 +1025,7 @@ file = keyboard/keyboard_r_outline.png
 group = 1000
 image = 43
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_s_outline.png
 
@@ -1005,7 +1033,7 @@ file = keyboard/keyboard_s_outline.png
 group = 1000
 image = 44
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_t_outline.png
 
@@ -1013,7 +1041,7 @@ file = keyboard/keyboard_t_outline.png
 group = 1000
 image = 45
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_u_outline.png
 
@@ -1021,7 +1049,7 @@ file = keyboard/keyboard_u_outline.png
 group = 1000
 image = 46
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_v_outline.png
 
@@ -1029,7 +1057,7 @@ file = keyboard/keyboard_v_outline.png
 group = 1000
 image = 47
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_w_outline.png
 
@@ -1037,7 +1065,7 @@ file = keyboard/keyboard_w_outline.png
 group = 1000
 image = 48
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_x_outline.png
 
@@ -1045,7 +1073,7 @@ file = keyboard/keyboard_x_outline.png
 group = 1000
 image = 49
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_y_outline.png
 
@@ -1053,7 +1081,7 @@ file = keyboard/keyboard_y_outline.png
 group = 1000
 image = 50
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_z_outline.png
 
@@ -1061,7 +1089,7 @@ file = keyboard/keyboard_z_outline.png
 group = 1000
 image = 51
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_capslock_outline.png
 
@@ -1069,7 +1097,7 @@ file = keyboard/keyboard_capslock_outline.png
 group = 1000
 image = 52
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_f1_outline.png
 
@@ -1077,7 +1105,7 @@ file = keyboard/keyboard_f1_outline.png
 group = 1000
 image = 53
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_f2_outline.png
 
@@ -1085,7 +1113,7 @@ file = keyboard/keyboard_f2_outline.png
 group = 1000
 image = 54
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_f3_outline.png
 
@@ -1093,7 +1121,7 @@ file = keyboard/keyboard_f3_outline.png
 group = 1000
 image = 55
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_f4_outline.png
 
@@ -1101,7 +1129,7 @@ file = keyboard/keyboard_f4_outline.png
 group = 1000
 image = 56
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_f5_outline.png
 
@@ -1109,7 +1137,7 @@ file = keyboard/keyboard_f5_outline.png
 group = 1000
 image = 57
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_f6_outline.png
 
@@ -1117,7 +1145,7 @@ file = keyboard/keyboard_f6_outline.png
 group = 1000
 image = 58
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_f7_outline.png
 
@@ -1125,7 +1153,7 @@ file = keyboard/keyboard_f7_outline.png
 group = 1000
 image = 59
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_f8_outline.png
 
@@ -1133,7 +1161,7 @@ file = keyboard/keyboard_f8_outline.png
 group = 1000
 image = 60
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_f9_outline.png
 
@@ -1141,7 +1169,7 @@ file = keyboard/keyboard_f9_outline.png
 group = 1000
 image = 61
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_f10_outline.png
 
@@ -1149,7 +1177,7 @@ file = keyboard/keyboard_f10_outline.png
 group = 1000
 image = 62
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_f11_outline.png
 
@@ -1157,7 +1185,7 @@ file = keyboard/keyboard_f11_outline.png
 group = 1000
 image = 63
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_f12_outline.png
 
@@ -1165,7 +1193,7 @@ file = keyboard/keyboard_f12_outline.png
 group = 1000
 image = 64
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_printscreen_outline.png
 
@@ -1173,7 +1201,7 @@ file = keyboard/keyboard_printscreen_outline.png
 group = 1000
 image = 65
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_scroll_lock_outline.png
 
@@ -1181,7 +1209,7 @@ file = keyboard/keyboard_scroll_lock_outline.png
 group = 1000
 image = 66
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_pause_outline.png
 
@@ -1189,7 +1217,7 @@ file = keyboard/keyboard_pause_outline.png
 group = 1000
 image = 67
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_insert_outline.png
 
@@ -1197,7 +1225,7 @@ file = keyboard/keyboard_insert_outline.png
 group = 1000
 image = 68
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_home_outline.png
 
@@ -1205,7 +1233,7 @@ file = keyboard/keyboard_home_outline.png
 group = 1000
 image = 69
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_page_up_outline.png
 
@@ -1213,7 +1241,7 @@ file = keyboard/keyboard_page_up_outline.png
 group = 1000
 image = 70
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_delete_outline.png
 
@@ -1221,7 +1249,7 @@ file = keyboard/keyboard_delete_outline.png
 group = 1000
 image = 71
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_end_outline.png
 
@@ -1229,7 +1257,7 @@ file = keyboard/keyboard_end_outline.png
 group = 1000
 image = 72
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_page_down_outline.png
 
@@ -1237,7 +1265,7 @@ file = keyboard/keyboard_page_down_outline.png
 group = 1000
 image = 73
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_arrow_right_outline.png
 
@@ -1245,7 +1273,7 @@ file = keyboard/keyboard_arrow_right_outline.png
 group = 1000
 image = 74
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_arrow_left_outline.png
 
@@ -1253,7 +1281,7 @@ file = keyboard/keyboard_arrow_left_outline.png
 group = 1000
 image = 75
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_arrow_down_outline.png
 
@@ -1261,7 +1289,7 @@ file = keyboard/keyboard_arrow_down_outline.png
 group = 1000
 image = 76
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_arrow_up_outline.png
 
@@ -1269,7 +1297,7 @@ file = keyboard/keyboard_arrow_up_outline.png
 group = 1000
 image = 77
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_numlock_outline.png
 
@@ -1277,7 +1305,7 @@ file = keyboard/keyboard_numlock_outline.png
 group = 1000
 image = 78
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_asterisk_outline.png
 
@@ -1285,7 +1313,7 @@ file = keyboard/keyboard_asterisk_outline.png
 group = 1000
 image = 79
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_numpad_plus_outline.png
 
@@ -1293,7 +1321,7 @@ file = keyboard/keyboard_numpad_plus_outline.png
 group = 1000
 image = 80
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_numpad_enter_outline.png
 
@@ -1301,7 +1329,7 @@ file = keyboard/keyboard_numpad_enter_outline.png
 group = 1000
 image = 81
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_ctrl_outline.png
 
@@ -1309,7 +1337,7 @@ file = keyboard/keyboard_ctrl_outline.png
 group = 1000
 image = 82
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_shift_outline.png
 
@@ -1317,7 +1345,7 @@ file = keyboard/keyboard_shift_outline.png
 group = 1000
 image = 83
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_alt_outline.png
 
@@ -1325,15 +1353,15 @@ file = keyboard/keyboard_alt_outline.png
 group = 1000
 image = 84
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard_win_outline.png
 
 [SpriteDef]
 group = 1000
-image = 85
+image = 100
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = keyboard/keyboard.png
 
@@ -1341,7 +1369,7 @@ file = keyboard/keyboard.png
 group = 1100
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = mouse/mouse_outline.png
 
@@ -1349,7 +1377,7 @@ file = mouse/mouse_outline.png
 group = 1100
 image = 1
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = mouse/mouse_left_outline.png
 
@@ -1357,7 +1385,7 @@ file = mouse/mouse_left_outline.png
 group = 1100
 image = 2
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = mouse/mouse_right_outline.png
 
@@ -1365,7 +1393,7 @@ file = mouse/mouse_right_outline.png
 group = 1100
 image = 3
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = mouse/mouse_scroll_outline.png
 
@@ -1373,7 +1401,7 @@ file = mouse/mouse_scroll_outline.png
 group = 1100
 image = 4
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = mouse/mouse_scroll_up_outline.png
 
@@ -1381,23 +1409,15 @@ file = mouse/mouse_scroll_up_outline.png
 group = 1100
 image = 5
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = mouse/mouse_scroll_down_outline.png
 
 [SpriteDef]
 group = 1100
-image = 6
-xaxis = 0
-yaxis = 64
-flags = 0
-file = mouse/mouse_scroll_vertical_outline.png
-
-[SpriteDef]
-group = 1100
 image = 7
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = mouse/mouse_scroll_horizontal_left_outline.png
 
@@ -1405,7 +1425,7 @@ file = mouse/mouse_scroll_horizontal_left_outline.png
 group = 1100
 image = 8
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = mouse/mouse_scroll_horizontal_right_outline.png
 
@@ -1413,7 +1433,7 @@ file = mouse/mouse_scroll_horizontal_right_outline.png
 group = 1100
 image = 9
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = mouse/mouse_side_back_outline.png
 
@@ -1421,7 +1441,7 @@ file = mouse/mouse_side_back_outline.png
 group = 1100
 image = 10
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = mouse/mouse_side_forward_outline.png
 
@@ -1429,758 +1449,1430 @@ file = mouse/mouse_side_forward_outline.png
 group = 1200
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
+flags = 0
+file = generic/xbox_dpad_up.png
+
+[SpriteDef]
+group = 1200
+image = 1
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_dpad_down.png
+
+[SpriteDef]
+group = 1200
+image = 2
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_dpad_left.png
+
+[SpriteDef]
+group = 1200
+image = 3
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_dpad_right.png
+
+[SpriteDef]
+group = 1200
+image = 4
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_button_a.png
+
+[SpriteDef]
+group = 1200
+image = 5
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_button_b.png
+
+[SpriteDef]
+group = 1200
+image = 6
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_button_x.png
+
+[SpriteDef]
+group = 1200
+image = 7
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_button_y.png
+
+[SpriteDef]
+group = 1200
+image = 8
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_button_menu.png
+
+[SpriteDef]
+group = 1200
+image = 9
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_button_view.png
+
+[SpriteDef]
+group = 1200
+image = 10
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_lb.png
+
+[SpriteDef]
+group = 1200
+image = 11
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_rb.png
+
+[SpriteDef]
+group = 1200
+image = 12
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_lt.png
+
+[SpriteDef]
+group = 1200
+image = 13
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_rt.png
+
+[SpriteDef]
+group = 1200
+image = 14
+xaxis = 0
+yaxis = 120
+flags = 0
+file = generic/xbox_stick_l_up.png
+
+[SpriteDef]
+group = 1200
+image = 15
+xaxis = 0
+yaxis = 120
+flags = 0
+file = generic/xbox_stick_l_down.png
+
+[SpriteDef]
+group = 1200
+image = 16
+xaxis = 0
+yaxis = 120
+flags = 0
+file = generic/xbox_stick_l_left.png
+
+[SpriteDef]
+group = 1200
+image = 17
+xaxis = 0
+yaxis = 120
+flags = 0
+file = generic/xbox_stick_l_right.png
+
+[SpriteDef]
+group = 1200
+image = 18
+xaxis = 0
+yaxis = 120
+flags = 0
+file = generic/xbox_stick_r_up.png
+
+[SpriteDef]
+group = 1200
+image = 19
+xaxis = 0
+yaxis = 120
+flags = 0
+file = generic/xbox_stick_r_down.png
+
+[SpriteDef]
+group = 1200
+image = 20
+xaxis = 0
+yaxis = 120
+flags = 0
+file = generic/xbox_stick_r_left.png
+
+[SpriteDef]
+group = 1200
+image = 21
+xaxis = 0
+yaxis = 120
+flags = 0
+file = generic/xbox_stick_r_right.png
+
+[SpriteDef]
+group = 1200
+image = 22
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_ls.png
+
+[SpriteDef]
+group = 1200
+image = 23
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_rs.png
+
+[SpriteDef]
+group = 1200
+image = 24
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_guide.png
+
+[SpriteDef]
+group = 1200
+image = 25
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/xbox_dpad.png
+
+[SpriteDef]
+group = 1200
+image = 100
+xaxis = 0
+yaxis = 96
+flags = 0
+file = generic/controller_generic.png
+
+[SpriteDef]
+group = 1200
+image = 200
+xaxis = 0
+yaxis = 101
+flags = 0
+file = generic/generic_button_finger_pressed.png
+
+[SpriteDef]
+group = 1300
+image = 4
+xaxis = 0
+yaxis = 96
 flags = 0
 file = xbox/xbox_button_color_a.png
 
 [SpriteDef]
-group = 1200
-image = 1
+group = 1300
+image = 5
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = xbox/xbox_button_color_b.png
 
 [SpriteDef]
-group = 1200
-image = 2
+group = 1300
+image = 6
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = xbox/xbox_button_color_x.png
 
 [SpriteDef]
-group = 1200
-image = 3
+group = 1300
+image = 7
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = xbox/xbox_button_color_y.png
 
 [SpriteDef]
-group = 1200
-image = 4
+group = 1300
+image = 50
 xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_button_view.png
-
-[SpriteDef]
-group = 1200
-image = 5
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_guide.png
-
-[SpriteDef]
-group = 1200
-image = 6
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_button_menu.png
-
-[SpriteDef]
-group = 1200
-image = 7
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_ls.png
-
-[SpriteDef]
-group = 1200
-image = 8
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_rs.png
-
-[SpriteDef]
-group = 1200
-image = 9
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_lb.png
-
-[SpriteDef]
-group = 1200
-image = 10
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_rb.png
-
-[SpriteDef]
-group = 1200
-image = 11
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_dpad_up.png
-
-[SpriteDef]
-group = 1200
-image = 12
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_dpad_down.png
-
-[SpriteDef]
-group = 1200
-image = 13
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_dpad_left.png
-
-[SpriteDef]
-group = 1200
-image = 14
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_dpad_right.png
-
-[SpriteDef]
-group = 1200
-image = 15
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_stick_l_up.png
-
-[SpriteDef]
-group = 1200
-image = 16
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_stick_l_left.png
-
-[SpriteDef]
-group = 1200
-image = 17
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_stick_l_right.png
-
-[SpriteDef]
-group = 1200
-image = 18
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_stick_l_down.png
-
-[SpriteDef]
-group = 1200
-image = 19
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_lt.png
-
-[SpriteDef]
-group = 1200
-image = 20
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_rt.png
-
-[SpriteDef]
-group = 1200
-image = 21
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_stick_r_up.png
-
-[SpriteDef]
-group = 1200
-image = 22
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_stick_r_left.png
-
-[SpriteDef]
-group = 1200
-image = 23
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_stick_r_right.png
-
-[SpriteDef]
-group = 1200
-image = 24
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/xbox_stick_r_down.png
-
-[SpriteDef]
-group = 1200
-image = 25
-xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = xbox/xbox_button_back.png
 
 [SpriteDef]
-group = 1200
-image = 26
+group = 1300
+image = 51
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = xbox/xbox_button_start.png
 
 [SpriteDef]
-group = 1200
-image = 30
+group = 1300
+image = 100
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = xbox/controller_xboxone.png
 
 [SpriteDef]
-group = 1200
-image = 31
+group = 1300
+image = 101
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = xbox/controller_xbox360.png
 
 [SpriteDef]
-group = 1200
-image = 32
+group = 1300
+image = 102
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = xbox/controller_xboxseries.png
 
 [SpriteDef]
-group = 1200
-image = 33
-xaxis = 0
-yaxis = 64
-flags = 0
-file = xbox/controller_generic.png
-
-[SpriteDef]
-group = 1300
+group = 1400
 image = 0
 xaxis = 0
-yaxis = 64
-flags = 0
-file = playstation/playstation_button_color_cross.png
-
-[SpriteDef]
-group = 1300
-image = 1
-xaxis = 0
-yaxis = 64
-flags = 0
-file = playstation/playstation_button_color_circle.png
-
-[SpriteDef]
-group = 1300
-image = 2
-xaxis = 0
-yaxis = 64
-flags = 0
-file = playstation/playstation_button_color_square.png
-
-[SpriteDef]
-group = 1300
-image = 3
-xaxis = 0
-yaxis = 64
-flags = 0
-file = playstation/playstation_button_color_triangle.png
-
-[SpriteDef]
-group = 1300
-image = 4
-xaxis = 0
-yaxis = 64
-flags = 0
-file = playstation/playstation3_button_select.png
-
-[SpriteDef]
-group = 1300
-image = 5
-xaxis = 0
-yaxis = 64
-flags = 0
-file = playstation/playstation4_button_share.png
-
-[SpriteDef]
-group = 1300
-image = 6
-xaxis = 0
-yaxis = 64
-flags = 0
-file = playstation/playstation3_button_start.png
-
-[SpriteDef]
-group = 1300
-image = 7
-xaxis = 0
-yaxis = 64
-flags = 0
-file = playstation/playstation_button_l3.png
-
-[SpriteDef]
-group = 1300
-image = 8
-xaxis = 0
-yaxis = 64
-flags = 0
-file = playstation/playstation_button_r3.png
-
-[SpriteDef]
-group = 1300
-image = 9
-xaxis = 0
-yaxis = 64
-flags = 0
-file = playstation/playstation_trigger_l1.png
-
-[SpriteDef]
-group = 1300
-image = 10
-xaxis = 0
-yaxis = 64
-flags = 0
-file = playstation/playstation_trigger_r1.png
-
-[SpriteDef]
-group = 1300
-image = 11
-xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = playstation/playstation_dpad_up.png
 
 [SpriteDef]
-group = 1300
-image = 12
+group = 1400
+image = 1
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = playstation/playstation_dpad_down.png
 
 [SpriteDef]
-group = 1300
-image = 13
+group = 1400
+image = 2
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = playstation/playstation_dpad_left.png
 
 [SpriteDef]
-group = 1300
-image = 14
+group = 1400
+image = 3
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = playstation/playstation_dpad_right.png
 
 [SpriteDef]
-group = 1300
-image = 15
+group = 1400
+image = 4
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = playstation/playstation_stick_l_up.png
+file = playstation/playstation_button_color_cross.png
 
 [SpriteDef]
-group = 1300
-image = 16
+group = 1400
+image = 5
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = playstation/playstation_stick_l_left.png
+file = playstation/playstation_button_color_circle.png
 
 [SpriteDef]
-group = 1300
-image = 17
+group = 1400
+image = 6
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = playstation/playstation_stick_l_right.png
+file = playstation/playstation_button_color_square.png
 
 [SpriteDef]
-group = 1300
-image = 18
+group = 1400
+image = 7
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = playstation/playstation_stick_l_down.png
+file = playstation/playstation_button_color_triangle.png
 
 [SpriteDef]
-group = 1300
-image = 19
+group = 1400
+image = 8
 xaxis = 0
-yaxis = 64
+yaxis = 96
+flags = 0
+file = playstation/playstation3_button_start.png
+
+[SpriteDef]
+group = 1400
+image = 9
+xaxis = 0
+yaxis = 96
+flags = 0
+file = playstation/playstation3_button_select.png
+
+[SpriteDef]
+group = 1400
+image = 10
+xaxis = 0
+yaxis = 96
+flags = 0
+file = playstation/playstation_trigger_l1.png
+
+[SpriteDef]
+group = 1400
+image = 11
+xaxis = 0
+yaxis = 96
+flags = 0
+file = playstation/playstation_trigger_r1.png
+
+[SpriteDef]
+group = 1400
+image = 12
+xaxis = 0
+yaxis = 96
 flags = 0
 file = playstation/playstation_trigger_l2.png
 
 [SpriteDef]
-group = 1300
-image = 20
+group = 1400
+image = 13
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = playstation/playstation_trigger_r2.png
 
 [SpriteDef]
-group = 1300
-image = 21
-xaxis = 0
-yaxis = 64
-flags = 0
-file = playstation/playstation_stick_r_up.png
-
-[SpriteDef]
-group = 1300
+group = 1400
 image = 22
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = playstation/playstation_stick_r_left.png
+file = playstation/playstation_button_l3.png
 
 [SpriteDef]
-group = 1300
+group = 1400
 image = 23
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = playstation/playstation_stick_r_right.png
+file = playstation/playstation_button_r3.png
 
 [SpriteDef]
-group = 1300
-image = 24
+group = 1400
+image = 50
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = playstation/playstation_stick_r_down.png
+file = playstation/playstation4_button_share.png
 
 [SpriteDef]
-group = 1300
-image = 25
+group = 1400
+image = 51
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = playstation/playstation4_button_options.png
 
 [SpriteDef]
-group = 1300
-image = 26
+group = 1400
+image = 52
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = playstation/playstation5_button_create.png
 
 [SpriteDef]
-group = 1300
-image = 27
+group = 1400
+image = 53
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = playstation/playstation5_button_options.png
 
 [SpriteDef]
-group = 1300
-image = 30
+group = 1400
+image = 100
 xaxis = 0
-yaxis = 64
-flags = 0
-file = playstation/controller_playstation5.png
-
-[SpriteDef]
-group = 1300
-image = 31
-xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = playstation/controller_playstation1.png
 
 [SpriteDef]
-group = 1300
-image = 32
+group = 1400
+image = 101
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = playstation/controller_playstation2.png
 
 [SpriteDef]
-group = 1300
-image = 33
+group = 1400
+image = 102
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = playstation/controller_playstation3.png
 
 [SpriteDef]
-group = 1300
-image = 34
+group = 1400
+image = 103
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = playstation/controller_playstation4.png
 
 [SpriteDef]
 group = 1400
+image = 104
+xaxis = 0
+yaxis = 96
+flags = 0
+file = playstation/controller_playstation5.png
+
+[SpriteDef]
+group = 1500
 image = 0
 xaxis = 0
-yaxis = 64
-flags = 0
-file = switch/switch_button_a.png
-
-[SpriteDef]
-group = 1400
-image = 1
-xaxis = 0
-yaxis = 64
-flags = 0
-file = switch/switch_button_b.png
-
-[SpriteDef]
-group = 1400
-image = 2
-xaxis = 0
-yaxis = 64
-flags = 0
-file = switch/switch_button_x.png
-
-[SpriteDef]
-group = 1400
-image = 3
-xaxis = 0
-yaxis = 64
-flags = 0
-file = switch/switch_button_y.png
-
-[SpriteDef]
-group = 1400
-image = 4
-xaxis = 0
-yaxis = 64
-flags = 0
-file = switch/switch_button_minus.png
-
-[SpriteDef]
-group = 1400
-image = 5
-xaxis = 0
-yaxis = 64
-flags = 0
-file = switch/switch_button_home.png
-
-[SpriteDef]
-group = 1400
-image = 6
-xaxis = 0
-yaxis = 64
-flags = 0
-file = switch/switch_button_plus.png
-
-[SpriteDef]
-group = 1400
-image = 7
-xaxis = 0
-yaxis = 64
-flags = 0
-file = switch/switch_stick_l_press.png
-
-[SpriteDef]
-group = 1400
-image = 8
-xaxis = 0
-yaxis = 64
-flags = 0
-file = switch/switch_stick_r_press.png
-
-[SpriteDef]
-group = 1400
-image = 9
-xaxis = 0
-yaxis = 64
-flags = 0
-file = switch/switch_button_l.png
-
-[SpriteDef]
-group = 1400
-image = 10
-xaxis = 0
-yaxis = 64
-flags = 0
-file = switch/switch_button_r.png
-
-[SpriteDef]
-group = 1400
-image = 11
-xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = switch/switch_dpad_up.png
 
 [SpriteDef]
-group = 1400
-image = 12
+group = 1500
+image = 1
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = switch/switch_dpad_down.png
 
 [SpriteDef]
-group = 1400
-image = 13
+group = 1500
+image = 2
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = switch/switch_dpad_left.png
 
 [SpriteDef]
-group = 1400
-image = 14
+group = 1500
+image = 3
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = switch/switch_dpad_right.png
 
 [SpriteDef]
-group = 1400
-image = 15
+group = 1500
+image = 4
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = switch/switch_stick_l_up.png
+file = switch/switch_button_a.png
 
 [SpriteDef]
-group = 1400
-image = 16
+group = 1500
+image = 5
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = switch/switch_stick_l_left.png
+file = switch/switch_button_b.png
 
 [SpriteDef]
-group = 1400
-image = 17
+group = 1500
+image = 6
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = switch/switch_stick_l_right.png
+file = switch/switch_button_x.png
 
 [SpriteDef]
-group = 1400
-image = 18
+group = 1500
+image = 7
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = switch/switch_stick_l_down.png
+file = switch/switch_button_y.png
 
 [SpriteDef]
-group = 1400
-image = 19
+group = 1500
+image = 8
 xaxis = 0
-yaxis = 64
+yaxis = 96
+flags = 0
+file = switch/switch_button_plus.png
+
+[SpriteDef]
+group = 1500
+image = 9
+xaxis = 0
+yaxis = 96
+flags = 0
+file = switch/switch_button_minus.png
+
+[SpriteDef]
+group = 1500
+image = 10
+xaxis = 0
+yaxis = 96
+flags = 0
+file = switch/switch_button_l.png
+
+[SpriteDef]
+group = 1500
+image = 11
+xaxis = 0
+yaxis = 96
+flags = 0
+file = switch/switch_button_r.png
+
+[SpriteDef]
+group = 1500
+image = 12
+xaxis = 0
+yaxis = 96
 flags = 0
 file = switch/switch_button_zl.png
 
 [SpriteDef]
-group = 1400
-image = 20
+group = 1500
+image = 13
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = switch/switch_button_zr.png
 
 [SpriteDef]
-group = 1400
-image = 21
+group = 1500
+image = 14
 xaxis = 0
-yaxis = 64
+yaxis = 128
+flags = 0
+file = switch/switch_stick_l_up.png
+
+[SpriteDef]
+group = 1500
+image = 15
+xaxis = 0
+yaxis = 96
+flags = 0
+file = switch/switch_stick_l_down.png
+
+[SpriteDef]
+group = 1500
+image = 16
+xaxis = 0
+yaxis = 128
+flags = 0
+file = switch/switch_stick_l_left.png
+
+[SpriteDef]
+group = 1500
+image = 17
+xaxis = 0
+yaxis = 128
+flags = 0
+file = switch/switch_stick_l_right.png
+
+[SpriteDef]
+group = 1500
+image = 18
+xaxis = 0
+yaxis = 128
 flags = 0
 file = switch/switch_stick_r_up.png
 
 [SpriteDef]
-group = 1400
-image = 22
+group = 1500
+image = 19
 xaxis = 0
-yaxis = 64
-flags = 0
-file = switch/switch_stick_r_left.png
-
-[SpriteDef]
-group = 1400
-image = 23
-xaxis = 0
-yaxis = 64
-flags = 0
-file = switch/switch_stick_r_right.png
-
-[SpriteDef]
-group = 1400
-image = 24
-xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = switch/switch_stick_r_down.png
 
 [SpriteDef]
-group = 1400
-image = 30
+group = 1500
+image = 20
 xaxis = 0
-yaxis = 64
+yaxis = 128
 flags = 0
-file = switch/controller_switch_pro.png
+file = switch/switch_stick_r_left.png
 
 [SpriteDef]
-group = 1400
-image = 31
+group = 1500
+image = 21
 xaxis = 0
-yaxis = 64
+yaxis = 128
 flags = 0
-file = switch/controller_switch.png
+file = switch/switch_stick_r_right.png
 
 [SpriteDef]
-group = 1400
-image = 32
+group = 1500
+image = 22
 xaxis = 0
-yaxis = 64
+yaxis = 128
 flags = 0
-file = switch/controller_switch2_pro.png
+file = switch/switch_stick_l_press.png
 
 [SpriteDef]
-group = 1400
-image = 33
+group = 1500
+image = 23
 xaxis = 0
-yaxis = 64
+yaxis = 128
+flags = 0
+file = switch/switch_stick_r_press.png
+
+[SpriteDef]
+group = 1500
+image = 24
+xaxis = 0
+yaxis = 96
+flags = 0
+file = switch/switch_button_home.png
+
+[SpriteDef]
+group = 1500
+image = 50
+xaxis = 0
+yaxis = 96
 flags = 0
 file = switch/switch2_button_zl.png
 
 [SpriteDef]
-group = 1400
-image = 34
+group = 1500
+image = 51
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
 file = switch/switch2_button_zr.png
 
 [SpriteDef]
-group = 2000
+group = 1500
+image = 52
+xaxis = 0
+yaxis = 96
+flags = 0
+file = switch/switch_up.png
+
+[SpriteDef]
+group = 1500
+image = 53
+xaxis = 0
+yaxis = 96
+flags = 0
+file = switch/switch_down.png
+
+[SpriteDef]
+group = 1500
+image = 54
+xaxis = 0
+yaxis = 96
+flags = 0
+file = switch/switch_left.png
+
+[SpriteDef]
+group = 1500
+image = 55
+xaxis = 0
+yaxis = 96
+flags = 0
+file = switch/switch_right.png
+
+[SpriteDef]
+group = 1500
+image = 100
+xaxis = 0
+yaxis = 96
+flags = 0
+file = switch/controller_switch_pro.png
+
+[SpriteDef]
+group = 1500
+image = 101
+xaxis = 0
+yaxis = 96
+flags = 0
+file = switch/controller_switch.png
+
+[SpriteDef]
+group = 1500
+image = 102
+xaxis = 0
+yaxis = 96
+flags = 0
+file = switch/controller_switch2_pro.png
+
+[SpriteDef]
+group = 1600
 image = 0
 xaxis = 0
+yaxis = 96
+flags = 0
+file = gamecube/gamecube_dpad_up.png
+
+[SpriteDef]
+group = 1600
+image = 1
+xaxis = 0
+yaxis = 96
+flags = 0
+file = gamecube/gamecube_dpad_down.png
+
+[SpriteDef]
+group = 1600
+image = 2
+xaxis = 0
+yaxis = 96
+flags = 0
+file = gamecube/gamecube_dpad_left.png
+
+[SpriteDef]
+group = 1600
+image = 3
+xaxis = 0
+yaxis = 96
+flags = 0
+file = gamecube/gamecube_dpad_right.png
+
+[SpriteDef]
+group = 1600
+image = 4
+xaxis = 0
+yaxis = 96
+flags = 0
+file = gamecube/gamecube_button_color_a.png
+
+[SpriteDef]
+group = 1600
+image = 5
+xaxis = 0
+yaxis = 96
+flags = 0
+file = gamecube/gamecube_button_color_b.png
+
+[SpriteDef]
+group = 1600
+image = 6
+xaxis = 0
+yaxis = 96
+flags = 0
+file = gamecube/gamecube_button_x.png
+
+[SpriteDef]
+group = 1600
+image = 7
+xaxis = 0
+yaxis = 96
+flags = 0
+file = gamecube/gamecube_button_y.png
+
+[SpriteDef]
+group = 1600
+image = 8
+xaxis = 0
+yaxis = 96
+flags = 0
+file = gamecube/gamecube_button_start.png
+
+[SpriteDef]
+group = 1600
+image = 11
+xaxis = 0
+yaxis = 96
+flags = 0
+file = gamecube/gamecube_button_z.png
+
+[SpriteDef]
+group = 1600
+image = 12
+xaxis = 0
+yaxis = 96
+flags = 0
+file = gamecube/gamecube_trigger_l.png
+
+[SpriteDef]
+group = 1600
+image = 13
+xaxis = 0
+yaxis = 96
+flags = 0
+file = gamecube/gamecube_trigger_r.png
+
+[SpriteDef]
+group = 1600
+image = 14
+xaxis = 0
+yaxis = 120
+flags = 0
+file = gamecube/gamecube_stick_grip_up.png
+
+[SpriteDef]
+group = 1600
+image = 15
+xaxis = 0
+yaxis = 120
+flags = 0
+file = gamecube/gamecube_stick_grip_down.png
+
+[SpriteDef]
+group = 1600
+image = 16
+xaxis = 0
+yaxis = 120
+flags = 0
+file = gamecube/gamecube_stick_grip_left.png
+
+[SpriteDef]
+group = 1600
+image = 17
+xaxis = 0
+yaxis = 120
+flags = 0
+file = gamecube/gamecube_stick_grip_right.png
+
+[SpriteDef]
+group = 1600
+image = 18
+xaxis = 0
+yaxis = 120
+flags = 0
+file = gamecube/gamecube_stick_c_color_up.png
+
+[SpriteDef]
+group = 1600
+image = 19
+xaxis = 0
+yaxis = 120
+flags = 0
+file = gamecube/gamecube_stick_c_color_down.png
+
+[SpriteDef]
+group = 1600
+image = 20
+xaxis = 0
+yaxis = 120
+flags = 0
+file = gamecube/gamecube_stick_c_color_left.png
+
+[SpriteDef]
+group = 1600
+image = 21
+xaxis = 0
+yaxis = 120
+flags = 0
+file = gamecube/gamecube_stick_c_color_right.png
+
+[SpriteDef]
+group = 1600
+image = 100
+xaxis = 0
+yaxis = 96
+flags = 0
+file = gamecube/gamecube_controller.png
+
+[SpriteDef]
+group = 1700
+image = 0
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_dpad_up.png
+
+[SpriteDef]
+group = 1700
+image = 1
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_dpad_down.png
+
+[SpriteDef]
+group = 1700
+image = 2
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_dpad_left.png
+
+[SpriteDef]
+group = 1700
+image = 3
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_dpad_right.png
+
+[SpriteDef]
+group = 1700
+image = 4
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_button_color_a.png
+
+[SpriteDef]
+group = 1700
+image = 5
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_button_color_b.png
+
+[SpriteDef]
+group = 1700
+image = 6
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_button_color_x.png
+
+[SpriteDef]
+group = 1700
+image = 7
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_button_color_y.png
+
+[SpriteDef]
+group = 1700
+image = 8
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_button_start_icon.png
+
+[SpriteDef]
+group = 1700
+image = 9
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_button_back_icon.png
+
+[SpriteDef]
+group = 1700
+image = 10
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_lb.png
+
+[SpriteDef]
+group = 1700
+image = 11
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_rb.png
+
+[SpriteDef]
+group = 1700
+image = 12
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_lt.png
+
+[SpriteDef]
+group = 1700
+image = 13
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_rt.png
+
+[SpriteDef]
+group = 1700
+image = 14
+xaxis = 0
+yaxis = 120
+flags = 0
+file = steamcontroller/steam_stick_up.png
+
+[SpriteDef]
+group = 1700
+image = 15
+xaxis = 0
+yaxis = 120
+flags = 0
+file = steamcontroller/steam_stick_down.png
+
+[SpriteDef]
+group = 1700
+image = 16
+xaxis = 0
+yaxis = 120
+flags = 0
+file = steamcontroller/steam_stick_left.png
+
+[SpriteDef]
+group = 1700
+image = 17
+xaxis = 0
+yaxis = 120
+flags = 0
+file = steamcontroller/steam_stick_right.png
+
+[SpriteDef]
+group = 1700
+image = 18
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_pad_up.png
+
+[SpriteDef]
+group = 1700
+image = 19
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_pad_down.png
+
+[SpriteDef]
+group = 1700
+image = 20
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_pad_left.png
+
+[SpriteDef]
+group = 1700
+image = 21
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_pad_right.png
+
+[SpriteDef]
+group = 1700
+image = 22
+xaxis = 0
+yaxis = 120
+flags = 0
+file = steamcontroller/steam_stick_l_press.png
+
+[SpriteDef]
+group = 1700
+image = 23
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/steam_pad_center.png
+
+[SpriteDef]
+group = 1700
+image = 24
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/controller_icon.png
+
+[SpriteDef]
+group = 1700
+image = 100
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/controller_steam.png
+
+[SpriteDef]
+group = 1700
+image = 50
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/controller_button_options.png
+
+[SpriteDef]
+group = 1700
+image = 51
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/controller_button_view.png
+
+[SpriteDef]
+group = 1700
+image = 52
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/controller_button_l1.png
+
+[SpriteDef]
+group = 1700
+image = 53
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/controller_button_r1.png
+
+[SpriteDef]
+group = 1700
+image = 54
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/controller_button_l2.png
+
+[SpriteDef]
+group = 1700
+image = 55
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/controller_button_r2.png
+
+[SpriteDef]
+group = 1700
+image = 101
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamcontroller/controller_steam_new.png
+
+[SpriteDef]
+group = 1800
+image = 8
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamdeck/steamdeck_button_options.png
+
+[SpriteDef]
+group = 1800
+image = 9
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamdeck/steamdeck_button_view.png
+
+[SpriteDef]
+group = 1800
+image = 10
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamdeck/steamdeck_button_l1.png
+
+[SpriteDef]
+group = 1800
+image = 11
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamdeck/steamdeck_button_r1.png
+
+[SpriteDef]
+group = 1800
+image = 12
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamdeck/steamdeck_button_l2.png
+
+[SpriteDef]
+group = 1800
+image = 13
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamdeck/steamdeck_button_r2.png
+
+[SpriteDef]
+group = 1800
+image = 22
+xaxis = 0
+yaxis = 120
+flags = 0
+file = steamdeck/steamdeck_stick_l_press.png
+
+[SpriteDef]
+group = 1800
+image = 23
+xaxis = 0
+yaxis = 120
+flags = 0
+file = steamdeck/steamdeck_stick_r_press.png
+
+[SpriteDef]
+group = 1800
+image = 24
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamdeck/steamdeck_button_guide.png
+
+[SpriteDef]
+group = 1800
+image = 100
+xaxis = 0
+yaxis = 96
+flags = 0
+file = steamdeck/controller_steamdeck.png
+
+[SpriteDef]
+group = 3000
+image = 0
+xaxis = 0
+yaxis = 96
+flags = 0
+file = setup/generic_button_circle_a.png
+
+[SpriteDef]
+group = 3000
+image = 1
+xaxis = 0
+yaxis = 96
+flags = 0
+file = setup/generic_button_circle_b.png
+
+[SpriteDef]
+group = 3000
+image = 2
+xaxis = 0
+yaxis = 96
+flags = 0
+file = setup/generic_button_circle_c.png
+
+[SpriteDef]
+group = 3000
+image = 3
+xaxis = 0
+yaxis = 96
+flags = 0
+file = setup/generic_button_circle_x.png
+
+[SpriteDef]
+group = 3000
+image = 4
+xaxis = 0
+yaxis = 96
+flags = 0
+file = setup/generic_button_circle_y.png
+
+[SpriteDef]
+group = 3000
+image = 5
+xaxis = 0
+yaxis = 96
+flags = 0
+file = setup/generic_button_circle_z.png
+
+[SpriteDef]
+group = 3000
+image = 6
+xaxis = 0
+yaxis = 96
+flags = 0
+file = setup/generic_button_circle_s.png
+
+[SpriteDef]
+group = 3000
+image = 7
+xaxis = 0
+yaxis = 96
+flags = 0
+file = setup/generic_button_circle_d.png
+
+[SpriteDef]
+group = 3000
+image = 8
+xaxis = 0
+yaxis = 96
+flags = 0
+file = setup/generic_button_circle_w.png
+
+[SpriteDef]
+group = 3000
+image = 9
+xaxis = 0
+yaxis = 96
+flags = 0
+file = setup/generic_button_circle_m.png
+
+[SpriteDef]
+group = 3001
+image = 0
+xaxis = 64
 yaxis = 64
 flags = 0
-file = generic/generic_button_finger_pressed.png
+file = setup/flair_arrows_up.png
+
+[SpriteDef]
+group = 3001
+image = 1
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/flair_arrows_down.png
+
+[SpriteDef]
+group = 3001
+image = 2
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/flair_arrows_left.png
+
+[SpriteDef]
+group = 3001
+image = 3
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/flair_arrows_right.png
+
+[SpriteDef]
+group = 3001
+image = 4
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/flair_arrows_diagonal_up_left.png
+
+[SpriteDef]
+group = 3001
+image = 5
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/flair_arrows_diagonal_up_right.png
+
+[SpriteDef]
+group = 3001
+image = 6
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/flair_arrows_diagonal_down_left.png
+
+[SpriteDef]
+group = 3001
+image = 7
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/flair_arrows_diagonal_down_right.png
+
+[SpriteDef]
+group = 3001
+image = 8
+xaxis = 64
+yaxis = 64
+flags = 0
+file = setup/generic_joystick_red.png
