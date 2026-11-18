@@ -532,9 +532,9 @@ cell.slot.facing = 1
 cell.slot.scale = .25,.25
 cell.slot.layerno = 2
 
-;Char Slot Swap Sound
-p1.swap.snd = 100, 0
-p2.swap.snd = 100, 0
+;Char Slot Change Sound
+p1.slot.snd = 100, 0
+p2.slot.snd = 100, 0
 
 ;Main big portraits
 p1.face.anim = 0                   ;Animated portraits
@@ -711,8 +711,8 @@ stage.portrait.slot.angle = 0
 stage.portrait.slot.scale = 0.11, 0.11
 stage.portrait.slot.layerno = 2
 
-;Stage Slot Swap Sound
-stage.swap.snd = 100, 0
+;Stage Slot Change Sound
+stage.slot.snd = 100, 0
 
 ;Record
 record.font = 3,0,0
