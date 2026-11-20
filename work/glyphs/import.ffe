@@ -41,641 +41,641 @@ noDuplicatePal = 0
 group = 1
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/1-0.png
+file = commandlist/^A.png
 
 [SpriteDef]
 group = 2
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/2-0.png
+file = commandlist/^B.png
 
 [SpriteDef]
 group = 3
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/3-0.png
+file = commandlist/^C.png
 
 [SpriteDef]
 group = 4
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/4-0.png
+file = commandlist/^D.png
 
 [SpriteDef]
 group = 23
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/23-0.png
+file = commandlist/^W.png
 
 [SpriteDef]
 group = 24
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/24-0.png
+file = commandlist/^X.png
 
 [SpriteDef]
 group = 25
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/25-0.png
+file = commandlist/^Y.png
 
 [SpriteDef]
 group = 26
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/26-0.png
+file = commandlist/^Z.png
 
 [SpriteDef]
 group = 39
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/39-0.png
+file = commandlist/_+.png
 
 [SpriteDef]
 group = 40
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/40-0.png
+file = commandlist/_..png
 
 [SpriteDef]
 group = 41
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/41-0.png
+file = commandlist/_DB.png
 
 [SpriteDef]
 group = 42
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/42-0.png
+file = commandlist/_D.png
 
 [SpriteDef]
 group = 43
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/43-0.png
+file = commandlist/_DF.png
 
 [SpriteDef]
 group = 44
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/44-0.png
+file = commandlist/_B.png
 
 [SpriteDef]
 group = 46
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/46-0.png
+file = commandlist/_F.png
 
 [SpriteDef]
 group = 47
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/47-0.png
+file = commandlist/_UB.png
 
 [SpriteDef]
 group = 48
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/48-0.png
+file = commandlist/_U.png
 
 [SpriteDef]
 group = 49
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/49-0.png
+file = commandlist/_UF.png
 
 [SpriteDef]
 group = 51
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/51-0.png
+file = commandlist/^S.png
 
 [SpriteDef]
 group = 52
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/52-0.png
+file = commandlist/^M.png
 
 [SpriteDef]
 group = 53
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/53-0.png
+file = commandlist/^P.png
 
 [SpriteDef]
 group = 54
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/54-0.png
+file = commandlist/^K.png
 
 [SpriteDef]
 group = 57
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/57-0.png
+file = commandlist/^LP.png
 
 [SpriteDef]
 group = 58
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/58-0.png
+file = commandlist/^MP.png
 
 [SpriteDef]
 group = 59
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/59-0.png
+file = commandlist/^HP.png
 
 [SpriteDef]
 group = 60
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/60-0.png
+file = commandlist/^LK.png
 
 [SpriteDef]
 group = 61
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/61-0.png
+file = commandlist/^MK.png
 
 [SpriteDef]
 group = 62
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/62-0.png
+file = commandlist/^HK.png
 
 [SpriteDef]
 group = 63
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/63-0.png
+file = commandlist/^3K.png
 
 [SpriteDef]
 group = 64
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/64-0.png
+file = commandlist/^3P.png
 
 [SpriteDef]
 group = 65
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/65-0.png
+file = commandlist/^2K.png
 
 [SpriteDef]
 group = 66
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/66-0.png
+file = commandlist/^2P.png
 
 [SpriteDef]
 group = 90
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/90-0.png
+file = commandlist/_-.png
 
 [SpriteDef]
 group = 91
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/91-0.png
+file = commandlist/_!.png
 
 [SpriteDef]
 group = 92
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/92-0.png
+file = commandlist/~DB.png
 
 [SpriteDef]
 group = 93
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/93-0.png
+file = commandlist/~D.png
 
 [SpriteDef]
 group = 94
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/94-0.png
+file = commandlist/~DF.png
 
 [SpriteDef]
 group = 95
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/95-0.png
+file = commandlist/~B.png
 
 [SpriteDef]
 group = 96
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/96-0.png
+file = commandlist/~F.png
 
 [SpriteDef]
 group = 97
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/97-0.png
+file = commandlist/~UB.png
 
 [SpriteDef]
 group = 98
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/98-0.png
+file = commandlist/~U.png
 
 [SpriteDef]
 group = 99
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/99-0.png
+file = commandlist/~UF.png
 
 [SpriteDef]
 group = 100
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/100-0.png
+file = commandlist/_HCB.png
 
 [SpriteDef]
 group = 101
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/101-0.png
+file = commandlist/_HUF.png
 
 [SpriteDef]
 group = 102
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/102-0.png
+file = commandlist/_HCF.png
 
 [SpriteDef]
 group = 103
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/103-0.png
+file = commandlist/_HUB.png
 
 [SpriteDef]
 group = 104
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/104-0.png
+file = commandlist/_QFD.png
 
 [SpriteDef]
 group = 105
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/105-0.png
+file = commandlist/_QDB.png
 
 [SpriteDef]
 group = 106
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/106-0.png
+file = commandlist/_QBU.png
 
 [SpriteDef]
 group = 107
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/107-0.png
+file = commandlist/_QUF.png
 
 [SpriteDef]
 group = 108
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/108-0.png
+file = commandlist/_QBD.png
 
 [SpriteDef]
 group = 109
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/109-0.png
+file = commandlist/_QDF.png
 
 [SpriteDef]
 group = 110
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/110-0.png
+file = commandlist/_QFU.png
 
 [SpriteDef]
 group = 111
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/111-0.png
+file = commandlist/_QUB.png
 
 [SpriteDef]
 group = 112
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/112-0.png
+file = commandlist/_FDF.png
 
 [SpriteDef]
 group = 113
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/113-0.png
+file = commandlist/_FUB.png
 
 [SpriteDef]
 group = 114
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/114-0.png
+file = commandlist/_FUF.png
 
 [SpriteDef]
 group = 115
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/115-0.png
+file = commandlist/_FDB.png
 
 [SpriteDef]
 group = 116
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/116-0.png
+file = commandlist/_XFF.png
 
 [SpriteDef]
 group = 117
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/117-0.png
+file = commandlist/_XBB.png
 
 [SpriteDef]
 group = 118
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/118-0.png
+file = commandlist/_DSF.png
 
 [SpriteDef]
 group = 119
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/119-0.png
+file = commandlist/_DSB.png
 
 [SpriteDef]
 group = 121
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/121-0.png
+file = commandlist/_AIR.png
 
 [SpriteDef]
 group = 122
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/122-0.png
+file = commandlist/_TAP.png
 
 [SpriteDef]
 group = 123
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/123-0.png
+file = commandlist/_MAX.png
 
 [SpriteDef]
 group = 124
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/124-0.png
+file = commandlist/_EX.png
 
 [SpriteDef]
 group = 127
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/127-0.png
+file = commandlist/_^.png
 
 [SpriteDef]
 group = 128
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/128-0.png
+file = commandlist/_=.png
 
 [SpriteDef]
 group = 129
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/129-0.png
+file = commandlist/_).png
 
 [SpriteDef]
 group = 130
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/130-0.png
+file = commandlist/_(.png
 
 [SpriteDef]
 group = 135
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/135-0.png
+file = commandlist/_`.png
 
 [SpriteDef]
 group = 136
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/136-0.png
+file = commandlist/_CHARGE.png
 
 [SpriteDef]
 group = 137
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/137-0.png
+file = commandlist/_HOLD.png
 
 [SpriteDef]
 group = 138
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/138-0.png
+file = commandlist/_RELEASE.png
 
 [SpriteDef]
 group = 139
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/139-0.png
+file = commandlist/_MASH.png
 
 [SpriteDef]
 group = 140
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/140-0.png
+file = commandlist/_CLOSE.png
 
 [SpriteDef]
 group = 141
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/141-0.png
+file = commandlist/_FAR.png
 
 [SpriteDef]
 group = 142
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/142-0.png
+file = commandlist/_AIROK.png
 
 [SpriteDef]
 group = 143
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/143-0.png
+file = commandlist/_THROW.png
 
 [SpriteDef]
 group = 144
 image = 0
 xaxis = 0
-yaxis = 64
+yaxis = 96
 flags = 0
-file = commandlist/144-0.png
+file = commandlist/_COUNTER.png
 
 [SpriteDef]
 group = 1000
@@ -2057,7 +2057,7 @@ file = switch/switch_button_zr.png
 group = 1500
 image = 14
 xaxis = 0
-yaxis = 128
+yaxis = 120
 flags = 0
 file = switch/switch_stick_l_up.png
 
@@ -2065,7 +2065,7 @@ file = switch/switch_stick_l_up.png
 group = 1500
 image = 15
 xaxis = 0
-yaxis = 96
+yaxis = 120
 flags = 0
 file = switch/switch_stick_l_down.png
 
@@ -2073,7 +2073,7 @@ file = switch/switch_stick_l_down.png
 group = 1500
 image = 16
 xaxis = 0
-yaxis = 128
+yaxis = 120
 flags = 0
 file = switch/switch_stick_l_left.png
 
@@ -2081,7 +2081,7 @@ file = switch/switch_stick_l_left.png
 group = 1500
 image = 17
 xaxis = 0
-yaxis = 128
+yaxis = 120
 flags = 0
 file = switch/switch_stick_l_right.png
 
@@ -2089,7 +2089,7 @@ file = switch/switch_stick_l_right.png
 group = 1500
 image = 18
 xaxis = 0
-yaxis = 128
+yaxis = 120
 flags = 0
 file = switch/switch_stick_r_up.png
 
@@ -2097,7 +2097,7 @@ file = switch/switch_stick_r_up.png
 group = 1500
 image = 19
 xaxis = 0
-yaxis = 96
+yaxis = 120
 flags = 0
 file = switch/switch_stick_r_down.png
 
@@ -2105,7 +2105,7 @@ file = switch/switch_stick_r_down.png
 group = 1500
 image = 20
 xaxis = 0
-yaxis = 128
+yaxis = 120
 flags = 0
 file = switch/switch_stick_r_left.png
 
@@ -2113,7 +2113,7 @@ file = switch/switch_stick_r_left.png
 group = 1500
 image = 21
 xaxis = 0
-yaxis = 128
+yaxis = 120
 flags = 0
 file = switch/switch_stick_r_right.png
 
@@ -2121,7 +2121,7 @@ file = switch/switch_stick_r_right.png
 group = 1500
 image = 22
 xaxis = 0
-yaxis = 128
+yaxis = 120
 flags = 0
 file = switch/switch_stick_l_press.png
 
@@ -2129,7 +2129,7 @@ file = switch/switch_stick_l_press.png
 group = 1500
 image = 23
 xaxis = 0
-yaxis = 128
+yaxis = 120
 flags = 0
 file = switch/switch_stick_r_press.png
 

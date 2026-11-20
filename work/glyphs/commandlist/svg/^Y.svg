@@ -1,0 +1,10 @@
+<svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="fill" cx="48" cy="48" r="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0.717" stop-color="#FBD500"/>
+      <stop offset="0.983" stop-color="#ECC800"/>
+    </radialGradient>
+  </defs>
+  <circle cx="48" cy="48" r="48" fill="url(#fill)"/>
+  <path d="M30.000 34.000 L30.000 32.000 L34.500 28.000 L36.800 28.000 L48.000 41.100 L59.300 28.000 L61.500 28.000 L66.000 32.000 L66.000 34.000 L52.000 49.800 L52.000 68.000 L44.000 68.000 L44.000 49.800 L30.000 34.000 Z" fill="#FFFFFF" stroke="#000000" stroke-width="6.0" stroke-linejoin="round" paint-order="stroke"/>
+</svg>
